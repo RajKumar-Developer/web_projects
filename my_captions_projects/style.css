@@ -1,0 +1,75 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
+:root(){
+  --red--:red;
+}
+.navbar-nav .nav-link {
+  margin-left: 1px;
+  margin-right: 200px;
+  color:#ffc400;
+}
+#SignUp{
+  padding-left: 30px;
+}
+.nav-link:hover {
+  color: #0026ff;
+}
+.footer {
+  padding: 20px; /* Add padding */
+  text-align: center; /* Center align content */
+  background-color: #ffc107; /* Set warning color background */
+  padding: 20px; /* Add padding */
+  text-align: center; /* Center align content */
+
+}
+/* Custom CSS for social media icons */
+.social-media-icons {
+  font-size: 24px; /* Set font size */
+  margin: 0 8px; /* Add margin between icons */
+  transition: transform 0.3s ease-in-out; /* Add transition effect */
+  color: #fff; /* Set icon color to white */
+}
+.social-media-icons:hover {
+  transform: scale(1.2); /* Apply scaling effect on hover */
+  border-radius: 15px;
+}
+.main-content {
+  background-image: url('bg2.jpg'); /* Set background image */
+  background-repeat: no-repeat; /* Disable background image repeat */
+  background-size: cover; /* Set background image to cover */
+  padding: 100px 0; /* Add padding */
+  position: relative; /* Set relative position for overlay grid */
+  min-height: 100vh; /* Set minimum height to cover full screen */
+}
+.main-content::after {
+  content: ""; /* Add empty content */
+  display: block; /* Display as block element */
+  background-color: rgba(0,0,0,0.6); /* Set overlay grid color with transparency */
+  position: absolute; /* Set absolute position for overlay grid */
+  top: 0; /* Set top position to 0 */
+  left: 0; /* Set left position to 0 */
+  bottom: 0; /* Set bottom position to 0 */
+  right: 0; /* Set right position to 0 */
+  z-index: 1; /* Set z-index to place above background image */
+}
+.main-content .container {
+  position: relative; /* Set relative position for container to make it stack above overlay grid */
+  z-index: 2; /* Set z-index to place above overlay grid */
+}
+.col-md-4{
+  padding-top: 90px;
+  padding-right: 100px;
+}
+h1{
+  color: #ffc107;
+}
+.navbar-brand{
+  padding-left: 40px;
+}
+.card-body{
+  background-color: #fff;
+  color: #00ff73;
+}
+
+.card:hover{
+  transform: scale(1.2);
+}

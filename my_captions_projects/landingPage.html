@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Caption</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" 
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" 
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" 
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" 
+    crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
+    crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/main.js"></script>
+    </head>
+<body>
+  <!-- Navigation bar -->
+  <div class="header"> 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="landingPage.html">
+        <img src="logo.jpg" width="40" height="40" alt="Logo" class="rounded-circle">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="mainPage()">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto"> <!-- Use "mx-auto" class to center align links and "flex-fill" class for equal width space -->
+          <li class="nav-item active flex-fill">
+            <a class="nav-link" href="main.html">Home</a>
+          </li>
+          <li class="nav-item flex-fill">
+            <a class="nav-link" href="scoreTable.html">Score Table</a>
+          </li>
+          <li class="nav-item flex-fill">
+            <a class="nav-link" href="matches.html">Matches</a>
+          </li>
+          <li class="nav-item flex-fill">
+            <a class="nav-link" href="aboutUs.html">AboutUs</a>
+          </li>
+          <li class="nav-item flex-fill">
+            <button type="button" class="btn btn-warning" onclick="loginPage()" >Login</button>
+            <button type="button" class="btn btn-warning" onclick="signUpPage()">SignUp</button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!--this is the main content-->
+  <div class="main-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1 style="color: #ffc107;">IPL Matches List</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card" style="height: 200px;">
+            <img src="gd1.JPEG" alt="Image 1" class="card-img-top" style="height: 100%;">
+            <div class="card-body">
+              <p class="card-text">CSK VS RCB</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="height: 200px;">
+            <img src="gd2.jpg" alt="Image 2" class="card-img-top" style="height: 100%;">
+            <div class="card-body">
+              <p class="card-text">MI VS RR</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="height: 200px;">
+            <img src="gd3.jpg" alt="Image 3" class="card-img-top" style="height: 100%;">
+            <div class="card-body">
+              <p class="card-text">GT VS KKR</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="height: 200px;">
+            <img src="gd4.jpg" alt="Image 3" class="card-img-top" style="height: 100%;">
+            <div class="card-body">
+              <p class="card-text">MI VS CSK</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="height: 200px;">
+            <img src="gd5.jpg" alt="Image 3" class="card-img-top" style="height: 100%;">
+            <div class="card-body">
+              <p class="card-text">SRH VS DC</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="height: 200px;">
+            <img src="gd6.jpg" alt="Image 3" class="card-img-top" style="height: 100%;">
+            <div class="card-body">
+              <p class="card-text">RCB VS MI</p>
+            </div>
+          </div>
+        </div>
+        <!-- Add more card columns as needed -->
+      </div>
+    </div>
+  </div>
+  
+
+
+
+    <div class="footer">
+      <div class="container">
+        <p>Follow us on social media:</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#"><i class="bi bi-facebook social-media-icons"></i></a></li>
+          <li class="list-inline-item"><a href="#"><i class="bi bi-twitter social-media-icons"></i></a></li>
+          <li class="list-inline-item"><a href="#"><i class="bi bi-instagram social-media-icons"></i></a></li>
+        </ul>
+        <p>&copy; 2023 My Webpage. All rights reserved.</p>
+      </div>
+    </div>
+  <!-- Add the Bootstrap v5 JS scripts at the end of the body -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"><!-- Search function -->
+<script>
+  function search() {
+    // Get the search input value
+    var searchValue = document.getElementById("searchBar").value;
+    // Perform search logic here
+    console.log("Search for: " + searchValue);
+    // Add your search logic here
+  }
+</script>
+</body>
+</html>

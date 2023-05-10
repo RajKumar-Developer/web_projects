@@ -1,0 +1,192 @@
+.navbar-nav .nav-link {
+    margin-left: 1px;
+    margin-right: 100px;
+    color:#ffc400;
+  }
+  #SignUp{
+    padding-left: 30px;
+  }
+  .nav-link:hover {
+    color: #0026ff;
+  }
+  .navbar-brand{
+    padding-left: 40px;
+  }
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+  }
+  .center {
+    width: 75%;
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 5px;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-bottom: 4em;
+    border-radius: 0px;
+    background: #e0e0e0;
+    box-shadow:  50px 50px 100px #cacaca,
+             -50px -50px 100px #f6f6f6;
+    transition: .4s ease-in-out;
+  }
+  .form:hover {
+    transform: scale(1.1);
+    border-radius: 48px;
+    background: #e0e0e0;
+    box-shadow:  46px 46px 92px #aaaaaa,
+             -46px -46px 92px #ffffff;
+    
+  }
+  
+  #heading {
+    text-align: center;
+    margin: 1em;
+    color: #f48c34;
+    /* font-size: 2em; */
+  }
+  
+  .field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 0.5em;
+    border-radius: 25px;
+    padding: 0.6em;
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    /* box-shadow: inset 2px 5px 10px rgb(5, 5, 5); */
+  }
+  .field svg {
+    margin-right: 10px;
+  }
+
+  .field:hover{
+    border:1px solid #000000
+  }
+  .input-icon {
+    height: 1.3em;
+    width: 1.3em;
+    fill: white;
+  }
+  
+  .input-field {
+    
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: none;
+    caret-color: #f48c34;
+    width: 100%;
+    color: #000000;
+  }
+
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+
+  .buttons button {
+    flex: 1;
+    justify-content: center;
+    flex-direction: row;
+    /* padding: 10px; */
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }  
+  .button1 {
+    margin-bottom: 3em;
+    padding: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    transition: .4s ease-in-out;
+    background-color: #252525;
+    color: white;
+  }
+  
+  .button1:hover {
+    background-color: rgb(0, 255, 0);
+    color: white;
+  }
+  
+  .button2 {
+    text-decoration: none;
+    margin-left: 2px;
+    margin-bottom: 3em;
+    padding: 1em;
+    padding-left: 1.5em;
+    padding-right: 2em;
+    border-radius: 15px;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    transition: .4s ease-in-out;
+    background-color: #252525;
+    color: white;
+  }
+  
+  .button2:hover {
+    background-color: #f48c34;
+    color: white;
+  }
+  
+  .button3 {
+    text-decoration: none;
+    margin-bottom: 4em;
+    padding: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-radius: 15px;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    transition: .4s ease-in-out;
+    background-color: #252525;
+    color: white;
+  }
+  
+  .button3:hover {
+    background-color: red;
+    color: white;
+  }
+
+.btn-warning:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/*responsive button code*/
+
+@media (min-width: 576px) {
+  .button1, .button2 ,.button3 {
+    width: auto;
+    margin-top: 0;
+  }
+}

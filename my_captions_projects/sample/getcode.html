@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy_product</title>
+    <link rel="stylesheet" href="./getstyle.css">
+</head>
+<body>
+    <!--button with inner animate-->
+    <button class="btn"> Button </button>
+    <!--copy text clip board button-->
+    <button class="copy">
+        <span data-text-end="Copied!" data-text-initial="Copy to clipboard" class="tooltip"></span>
+        <span>
+          <svg xml:space="preserve" style="enable-background:new 0 0 512 512" viewBox="0 0 6.35 6.35" y="0" x="0" height="20" width="20" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" class="clipboard">
+            <g>
+              <path fill="currentColor" d="M2.43.265c-.3 0-.548.236-.573.53h-.328a.74.74 0 0 0-.735.734v3.822a.74.74 0 0 0 .735.734H4.82a.74.74 0 0 0 .735-.734V1.529a.74.74 0 0 0-.735-.735h-.328a.58.58 0 0 0-.573-.53zm0 .529h1.49c.032 0 .049.017.049.049v.431c0 .032-.017.049-.049.049H2.43c-.032 0-.05-.017-.05-.049V.843c0-.032.018-.05.05-.05zm-.901.53h.328c.026.292.274.528.573.528h1.49a.58.58 0 0 0 .573-.529h.328a.2.2 0 0 1 .206.206v3.822a.2.2 0 0 1-.206.205H1.53a.2.2 0 0 1-.206-.205V1.529a.2.2 0 0 1 .206-.206z"></path>
+            </g>
+          </svg>
+          <svg xml:space="preserve" style="enable-background:new 0 0 512 512" viewBox="0 0 24 24" y="0" x="0" height="18" width="18" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" class="checkmark">
+            <g>
+              <path data-original="#000000" fill="currentColor" d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z"></path>
+            </g>
+          </svg>
+        </span>
+      </button>
+
+      <!--inner text change button-->
+      <button class="ui-btn">
+        <span>
+          Button 
+        </span>
+      </button>
+
+      <!-- normal inner color change button -->
+      <button>
+        Hold that
+      </button>
+
+      <!--cubic design-->
+      <div class="scene">
+        <div class="cube">
+          <span class="side top">Easter</span>
+          <span class="side front">Happy</span>
+        </div>
+      </div>
+      <!--Lock and unlock-->
+      <input id="inpLock" type="checkbox">
+        <label class="btn-lock" for="inpLock">
+    <svg width="36" height="40" viewBox="0 0 36 40">
+        <path class="lockb" d="M27 27C27 34.1797 21.1797 40 14 40C6.8203 40 1 34.1797 1 27C1 19.8203 6.8203 14 14 14C21.1797 14 27 19.8203 27 27ZM15.6298 26.5191C16.4544 25.9845 17 25.056 17 24C17 22.3431 15.6569 21 14 21C12.3431 21 11 22.3431 11 24C11 25.056 11.5456 25.9845 12.3702 26.5191L11 32H17L15.6298 26.5191Z"></path>
+        <path class="lock" d="M6 21V10C6 5.58172 9.58172 2 14 2V2C18.4183 2 22 5.58172 22 10V21"></path>
+        <path class="bling" d="M29 20L31 22"></path>
+        <path class="bling" d="M31.5 15H34.5"></path>
+        <path class="bling" d="M29 10L31 8"></path>
+    </svg>
+</label>
+
+<!--Form validation and save-->
+<form class="form">
+    <p id="heading">Login</p>
+    <div class="field">
+    <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+    <path d="M13.106 7.222c0-2.967-2.249-5.032-5.482-5.032-3.35 0-5.646 2.318-5.646 5.702 0 3.493 2.235 5.708 5.762 5.708.862 0 1.689-.123 2.304-.335v-.862c-.43.199-1.354.328-2.29.328-2.926 0-4.813-1.88-4.813-4.798 0-2.844 1.921-4.881 4.594-4.881 2.735 0 4.608 1.688 4.608 4.156 0 1.682-.554 2.769-1.416 2.769-.492 0-.772-.28-.772-.76V5.206H8.923v.834h-.11c-.266-.595-.881-.964-1.6-.964-1.4 0-2.378 1.162-2.378 2.823 0 1.737.957 2.906 2.379 2.906.8 0 1.415-.39 1.709-1.087h.11c.081.67.703 1.148 1.503 1.148 1.572 0 2.57-1.415 2.57-3.643zm-7.177.704c0-1.197.54-1.907 1.456-1.907.93 0 1.524.738 1.524 1.907S8.308 9.84 7.371 9.84c-.895 0-1.442-.725-1.442-1.914z"></path>
+    </svg>
+      <input autocomplete="off" placeholder="Username" class="input-field" type="text">
+    </div>
+    <div class="field">
+    <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+    <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"></path>
+    </svg>
+      <input placeholder="Password" class="input-field" type="password">
+    </div>
+    <div class="btn">
+    <button class="button1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Login&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+    <button class="button2">Sign Up</button>
+    </div>
+    <button class="button3">Forgot Password</button>
+</form>
+<!--loader...-->
+<div class="loader">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+  </div>
+  <hr>
+  <hr>
+  <!--tempreture of that day-->
+  <div class="card">
+    <div class="container">
+      <div class="cloud front">
+        <span class="left-front"></span>
+        <span class="right-front"></span>
+      </div>
+      <span class="sun sunshine"></span>
+      <span class="sun"></span>
+      <div class="cloud back">
+        <span class="left-back"></span>
+        <span class="right-back"></span>
+      </div>
+    </div>
+  
+    <div class="card-header">
+      <span>Messadine, Susah<br>Tunisia</span>
+      <span>March 13</span>
+    </div>
+  
+    <span class="temp">23°</span>
+  
+    <div class="temp-scale">
+      <span>Celcius</span>
+    </div>
+  </div>
+  <hr><hr>
+  <!--Card cover hover effects-->
+  <div class="card wallet">
+    <div class="overlay"></div>
+    <div class="circle">
+
+
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="23 29 78 60" height="60px" width="78px">
+  
+            <defs></defs>
+            <g transform="translate(23.000000, 29.500000)" fill-rule="evenodd" fill="none" stroke-width="1" stroke="none" id="icon">
+                <rect rx="4.70247832" height="21.8788565" width="9.40495664" y="26.0333433" x="67.8357511" fill="#AC8BE9" id="Rectangle-3"></rect>
+                <rect rx="4.70247832" height="10.962961" width="9.40495664" y="38.776399" x="67.8357511" fill="#6A5297" id="Rectangle-3"></rect>
+                <polygon points="57.3086772 0 67.1649301 26.3776902 14.4413177 45.0699507 4.58506484 18.6922605" fill="#6A5297" id="Rectangle-2">
+                </polygon>
+                <path fill="#8B6FC0" id="Rectangle" d="M0,19.6104296 C0,16.2921718 2.68622235,13.6021923 5.99495032,13.6021923 L67.6438591,13.6021923 C70.9547788,13.6021923 73.6388095,16.2865506 73.6388095,19.6104296 L73.6388095,52.6639057 C73.6388095,55.9821635 70.9525871,58.672143 67.6438591,58.672143 L5.99495032,58.672143 C2.68403068,58.672143 0,55.9877847 0,52.6639057 L0,19.6104296 Z"></path>
+                <path fill="#F6F1FF" id="Fill-12" d="M47.5173769,27.0835169 C45.0052827,24.5377699 40.9347162,24.5377699 38.422622,27.0835169 L36.9065677,28.6198808 L35.3905134,27.0835169 C32.8799903,24.5377699 28.8078527,24.5377699 26.2957585,27.0835169 C23.7852354,29.6292639 23.7852354,33.7559532 26.2957585,36.3001081 L36.9065677,47.0530632 L47.5173769,36.3001081 C50.029471,33.7559532 50.029471,29.6292639 47.5173769,27.0835169"></path>
+                <rect height="12.863158" width="15.6082259" y="26.1162588" x="58.0305835" fill="#AC8BE9" id="Rectangle-4"></rect>
+                <ellipse ry="2.23319575" rx="2.20116007" cy="33.0919007" cx="65.8346965" fill="#FFFFFF" id="Oval">
+                </ellipse>
+            </g>
+        </svg>
+
+    </div>
+    <p>Wallet</p>
+</div>
+<hr><hr>
+<!--subscription for the user request by email-->
+<div class="popup">
+    <form class="form">
+      <div class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 34 34" height="34" width="34">
+          <path stroke-linejoin="round" stroke-width="2.5" stroke="#115DFC" d="M7.08385 9.91666L5.3572 11.0677C4.11945 11.8929 3.50056 12.3055 3.16517 12.9347C2.82977 13.564 2.83226 14.3035 2.83722 15.7825C2.84322 17.5631 2.85976 19.3774 2.90559 21.2133C3.01431 25.569 3.06868 27.7468 4.67008 29.3482C6.27148 30.9498 8.47873 31.0049 12.8932 31.1152C15.6396 31.1838 18.3616 31.1838 21.1078 31.1152C25.5224 31.0049 27.7296 30.9498 29.331 29.3482C30.9324 27.7468 30.9868 25.569 31.0954 21.2133C31.1413 19.3774 31.1578 17.5631 31.1639 15.7825C31.1688 14.3035 31.1712 13.564 30.8359 12.9347C30.5004 12.3055 29.8816 11.8929 28.6437 11.0677L26.9171 9.91666"></path>
+          <path stroke-linejoin="round" stroke-width="2.5" stroke="#115DFC" d="M2.83331 14.1667L12.6268 20.0427C14.7574 21.3211 15.8227 21.9603 17 21.9603C18.1772 21.9603 19.2426 21.3211 21.3732 20.0427L31.1666 14.1667"></path>
+          <path stroke-width="2.5" stroke="#115DFC" d="M7.08331 17V8.50001C7.08331 5.82872 7.08331 4.49307 7.91318 3.66321C8.74304 2.83334 10.0787 2.83334 12.75 2.83334H21.25C23.9212 2.83334 25.2569 2.83334 26.0868 3.66321C26.9166 4.49307 26.9166 5.82872 26.9166 8.50001V17"></path>
+          <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" stroke="#115DFC" d="M14.1667 14.1667H19.8334M14.1667 8.5H19.8334"></path>
+        </svg>
+      </div>
+      <div class="note">
+        <label class="title">Subscribe for updates</label>
+        <span class="subtitle">Subscribe to this weekly news letter so you don’t miss out
+  on the new hot tech topics.</span>
+      </div>
+      <input placeholder="Enter your e-mail" title="Enter your e-mail" name="email" type="email" class="input_field">
+      <button class="submit">Submit</button>
+    </form>
+  </div>
+
+  <hr><hr>
+  <!--decent form of login-->
+  <form class="form_container">
+    <div class="logo_container"></div>
+    <div class="title_container">
+      <p class="title">Login to your Account</p>
+      <span class="subtitle">Get started with our app, just create an account and enjoy the experience.</span>
+    </div>
+    <br>
+    <div class="input_container">
+      <label class="input_label" for="email_field">Email</label>
+      <svg fill="none" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg" class="icon">
+        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="#141B34" d="M7 8.5L9.94202 10.2394C11.6572 11.2535 12.3428 11.2535 14.058 10.2394L17 8.5"></path>
+        <path stroke-linejoin="round" stroke-width="1.5" stroke="#141B34" d="M2.01577 13.4756C2.08114 16.5412 2.11383 18.0739 3.24496 19.2094C4.37608 20.3448 5.95033 20.3843 9.09883 20.4634C11.0393 20.5122 12.9607 20.5122 14.9012 20.4634C18.0497 20.3843 19.6239 20.3448 20.7551 19.2094C21.8862 18.0739 21.9189 16.5412 21.9842 13.4756C22.0053 12.4899 22.0053 11.5101 21.9842 10.5244C21.9189 7.45886 21.8862 5.92609 20.7551 4.79066C19.6239 3.65523 18.0497 3.61568 14.9012 3.53657C12.9607 3.48781 11.0393 3.48781 9.09882 3.53656C5.95033 3.61566 4.37608 3.65521 3.24495 4.79065C2.11382 5.92608 2.08114 7.45885 2.01576 10.5244C1.99474 11.5101 1.99475 12.4899 2.01577 13.4756Z"></path>
+      </svg>
+      <input placeholder="name@mail.com" title="Inpit title" name="input-name" type="text" class="input_field" id="email_field">
+    </div>
+    <div class="input_container">
+      <label class="input_label" for="password_field">Password</label>
+      <svg fill="none" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg" class="icon">
+        <path stroke-linecap="round" stroke-width="1.5" stroke="#141B34" d="M18 11.0041C17.4166 9.91704 16.273 9.15775 14.9519 9.0993C13.477 9.03404 11.9788 9 10.329 9C8.67911 9 7.18091 9.03404 5.70604 9.0993C3.95328 9.17685 2.51295 10.4881 2.27882 12.1618C2.12602 13.2541 2 14.3734 2 15.5134C2 16.6534 2.12602 17.7727 2.27882 18.865C2.51295 20.5387 3.95328 21.8499 5.70604 21.9275C6.42013 21.9591 7.26041 21.9834 8 22"></path>
+        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="#141B34" d="M6 9V6.5C6 4.01472 8.01472 2 10.5 2C12.9853 2 15 4.01472 15 6.5V9"></path>
+        <path fill="#141B34" d="M21.2046 15.1045L20.6242 15.6956V15.6956L21.2046 15.1045ZM21.4196 16.4767C21.7461 16.7972 22.2706 16.7924 22.5911 16.466C22.9116 16.1395 22.9068 15.615 22.5804 15.2945L21.4196 16.4767ZM18.0228 15.1045L17.4424 14.5134V14.5134L18.0228 15.1045ZM18.2379 18.0387C18.5643 18.3593 19.0888 18.3545 19.4094 18.028C19.7299 17.7016 19.7251 17.1771 19.3987 16.8565L18.2379 18.0387ZM14.2603 20.7619C13.7039 21.3082 12.7957 21.3082 12.2394 20.7619L11.0786 21.9441C12.2794 23.1232 14.2202 23.1232 15.4211 21.9441L14.2603 20.7619ZM12.2394 20.7619C11.6914 20.2239 11.6914 19.358 12.2394 18.82L11.0786 17.6378C9.86927 18.8252 9.86927 20.7567 11.0786 21.9441L12.2394 20.7619ZM12.2394 18.82C12.7957 18.2737 13.7039 18.2737 14.2603 18.82L15.4211 17.6378C14.2202 16.4587 12.2794 16.4587 11.0786 17.6378L12.2394 18.82ZM14.2603 18.82C14.8082 19.358 14.8082 20.2239 14.2603 20.7619L15.4211 21.9441C16.6304 20.7567 16.6304 18.8252 15.4211 17.6378L14.2603 18.82ZM20.6242 15.6956L21.4196 16.4767L22.5804 15.2945L21.785 14.5134L20.6242 15.6956ZM15.4211 18.82L17.8078 16.4767L16.647 15.2944L14.2603 17.6377L15.4211 18.82ZM17.8078 16.4767L18.6032 15.6956L17.4424 14.5134L16.647 15.2945L17.8078 16.4767ZM16.647 16.4767L18.2379 18.0387L19.3987 16.8565L17.8078 15.2945L16.647 16.4767ZM21.785 14.5134C21.4266 14.1616 21.0998 13.8383 20.7993 13.6131C20.4791 13.3732 20.096 13.1716 19.6137 13.1716V14.8284C19.6145 14.8284 19.619 14.8273 19.6395 14.8357C19.6663 14.8466 19.7183 14.8735 19.806 14.9391C19.9969 15.0822 20.2326 15.3112 20.6242 15.6956L21.785 14.5134ZM18.6032 15.6956C18.9948 15.3112 19.2305 15.0822 19.4215 14.9391C19.5091 14.8735 19.5611 14.8466 19.5879 14.8357C19.6084 14.8273 19.6129 14.8284 19.6137 14.8284V13.1716C19.1314 13.1716 18.7483 13.3732 18.4281 13.6131C18.1276 13.8383 17.8008 14.1616 17.4424 14.5134L18.6032 15.6956Z"></path>
+      </svg>
+      <input placeholder="Password" title="Inpit title" name="input-name" type="password" class="input_field" id="password_field">
+    </div>
+    <button title="Sign In" type="submit" class="sign-in_btn">
+      <span>Sign In</span>
+    </button>
+  
+    <div class="separator">
+      <hr class="line">
+      <span>Or</span>
+      <hr class="line">
+    </div>
+    <button title="Sign In" type="submit" class="sign-in_ggl">
+      <svg height="18" width="18" viewBox="0 0 32 32" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <path d="M44.5 20H24v8.5h11.8C34.7 33.9 30.1 37 24 37c-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4C34.6 4.1 29.6 2 24 2 11.8 2 2 11.8 2 24s9.8 22 22 22c11 0 21-8 21-22 0-1.3-.2-2.7-.5-4z" id="A"></path>
+        </defs>
+        <clipPath id="B">
+          
+        </clipPath>
+        <g transform="matrix(.727273 0 0 .727273 -.954545 -1.45455)">
+          <path fill="#fbbc05" clip-path="url(#B)" d="M0 37V11l17 13z"></path>
+          <path fill="#ea4335" clip-path="url(#B)" d="M0 11l17 13 7-6.1L48 14V0H0z"></path>
+          <path fill="#34a853" clip-path="url(#B)" d="M0 37l30-23 7.9 1L48 0v48H0z"></path>
+          <path fill="#4285f4" clip-path="url(#B)" d="M48 48L17 24l-4-3 35-10z"></path>
+        </g>
+      </svg>
+      <span>Sign In with Google</span>
+    </button>
+    <button title="Sign In" type="submit" class="sign-in_apl">
+      <svg preserveAspectRatio="xMidYMid" version="1.1" viewBox="0 0 256 315" height="20px" width="16px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+        <g>
+          <path fill="#ffffff" d="M213.803394,167.030943 C214.2452,214.609646 255.542482,230.442639 256,230.644727 C255.650812,231.761357 249.401383,253.208293 234.24263,275.361446 C221.138555,294.513969 207.538253,313.596333 186.113759,313.991545 C165.062051,314.379442 158.292752,301.507828 134.22469,301.507828 C110.163898,301.507828 102.642899,313.596301 82.7151126,314.379442 C62.0350407,315.16201 46.2873831,293.668525 33.0744079,274.586162 C6.07529317,235.552544 -14.5576169,164.286328 13.147166,116.18047 C26.9103111,92.2909053 51.5060917,77.1630356 78.2026125,76.7751096 C98.5099145,76.3877456 117.677594,90.4371851 130.091705,90.4371851 C142.497945,90.4371851 165.790755,73.5415029 190.277627,76.0228474 C200.528668,76.4495055 229.303509,80.1636878 247.780625,107.209389 C246.291825,108.132333 213.44635,127.253405 213.803394,167.030988 M174.239142,50.1987033 C185.218331,36.9088319 192.607958,18.4081019 190.591988,0 C174.766312,0.636050225 155.629514,10.5457909 144.278109,23.8283506 C134.10507,35.5906758 125.195775,54.4170275 127.599657,72.4607932 C145.239231,73.8255433 163.259413,63.4970262 174.239142,50.1987249"></path>
+        </g>
+      </svg>
+      <span>Sign In with Apple</span>
+    </button>
+    <p class="note">Terms of use &amp; Conditions</p>
+  </form>
+  <hr><hr>
+  <!--chat bot-->
+  <div class="card">
+    <div class="chat-header">Chat</div>
+      <div class="chat-window">
+        <ul class="message-list"></ul>
+      </div>
+      <div class="chat-input">
+          <input type="text" class="message-input" placeholder="Type your message here">
+          <button class="send-button">Send</button>
+      </div>
+    </div>
+  <hr><hr>
+  <!--card details form-->
+  <div class="modal">
+    <form class="form">
+      <div class="payment--options">
+        <button name="paypal" type="button">
+          <svg xml:space="preserve" viewBox="0 0 124 33" height="33px" width="124px" y="0px" x="0px" id="Layer_1" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+    <path d="M46.211,6.749h-6.839c-0.468,0-0.866,0.34-0.939,0.802l-2.766,17.537c-0.055,0.346,0.213,0.658,0.564,0.658  h3.265c0.468,0,0.866-0.34,0.939-0.803l0.746-4.73c0.072-0.463,0.471-0.803,0.938-0.803h2.165c4.505,0,7.105-2.18,7.784-6.5  c0.306-1.89,0.013-3.375-0.872-4.415C50.224,7.353,48.5,6.749,46.211,6.749z M47,13.154c-0.374,2.454-2.249,2.454-4.062,2.454  h-1.032l0.724-4.583c0.043-0.277,0.283-0.481,0.563-0.481h0.473c1.235,0,2.4,0,3.002,0.704C47.027,11.668,47.137,12.292,47,13.154z" fill="#253B80"></path>
+    <path d="M66.654,13.075h-3.275c-0.279,0-0.52,0.204-0.563,0.481l-0.145,0.916l-0.229-0.332  c-0.709-1.029-2.29-1.373-3.868-1.373c-3.619,0-6.71,2.741-7.312,6.586c-0.313,1.918,0.132,3.752,1.22,5.031  c0.998,1.176,2.426,1.666,4.125,1.666c2.916,0,4.533-1.875,4.533-1.875l-0.146,0.91c-0.055,0.348,0.213,0.66,0.562,0.66h2.95  c0.469,0,0.865-0.34,0.939-0.803l1.77-11.209C67.271,13.388,67.004,13.075,66.654,13.075z M62.089,19.449  c-0.316,1.871-1.801,3.127-3.695,3.127c-0.951,0-1.711-0.305-2.199-0.883c-0.484-0.574-0.668-1.391-0.514-2.301  c0.295-1.855,1.805-3.152,3.67-3.152c0.93,0,1.686,0.309,2.184,0.892C62.034,17.721,62.232,18.543,62.089,19.449z" fill="#253B80"></path>
+    <path d="M84.096,13.075h-3.291c-0.314,0-0.609,0.156-0.787,0.417l-4.539,6.686l-1.924-6.425  c-0.121-0.402-0.492-0.678-0.912-0.678h-3.234c-0.393,0-0.666,0.384-0.541,0.754l3.625,10.638l-3.408,4.811  c-0.268,0.379,0.002,0.9,0.465,0.9h3.287c0.312,0,0.604-0.152,0.781-0.408L84.564,13.97C84.826,13.592,84.557,13.075,84.096,13.075z" fill="#253B80"></path>
+    <path d="M94.992,6.749h-6.84c-0.467,0-0.865,0.34-0.938,0.802l-2.766,17.537c-0.055,0.346,0.213,0.658,0.562,0.658  h3.51c0.326,0,0.605-0.238,0.656-0.562l0.785-4.971c0.072-0.463,0.471-0.803,0.938-0.803h2.164c4.506,0,7.105-2.18,7.785-6.5  c0.307-1.89,0.012-3.375-0.873-4.415C99.004,7.353,97.281,6.749,94.992,6.749z M95.781,13.154c-0.373,2.454-2.248,2.454-4.062,2.454  h-1.031l0.725-4.583c0.043-0.277,0.281-0.481,0.562-0.481h0.473c1.234,0,2.4,0,3.002,0.704  C95.809,11.668,95.918,12.292,95.781,13.154z" fill="#179BD7"></path>
+    <path d="M115.434,13.075h-3.273c-0.281,0-0.52,0.204-0.562,0.481l-0.145,0.916l-0.23-0.332  c-0.709-1.029-2.289-1.373-3.867-1.373c-3.619,0-6.709,2.741-7.311,6.586c-0.312,1.918,0.131,3.752,1.219,5.031  c1,1.176,2.426,1.666,4.125,1.666c2.916,0,4.533-1.875,4.533-1.875l-0.146,0.91c-0.055,0.348,0.213,0.66,0.564,0.66h2.949  c0.467,0,0.865-0.34,0.938-0.803l1.771-11.209C116.053,13.388,115.785,13.075,115.434,13.075z M110.869,19.449  c-0.314,1.871-1.801,3.127-3.695,3.127c-0.949,0-1.711-0.305-2.199-0.883c-0.484-0.574-0.666-1.391-0.514-2.301  c0.297-1.855,1.805-3.152,3.67-3.152c0.93,0,1.686,0.309,2.184,0.892C110.816,17.721,111.014,18.543,110.869,19.449z" fill="#179BD7"></path>
+    <path d="M119.295,7.23l-2.807,17.858c-0.055,0.346,0.213,0.658,0.562,0.658h2.822c0.469,0,0.867-0.34,0.939-0.803  l2.768-17.536c0.055-0.346-0.213-0.659-0.562-0.659h-3.16C119.578,6.749,119.338,6.953,119.295,7.23z" fill="#179BD7"></path>
+    <path d="M7.266,29.154l0.523-3.322l-1.165-0.027H1.061L4.927,1.292C4.939,1.218,4.978,1.149,5.035,1.1  c0.057-0.049,0.13-0.076,0.206-0.076h9.38c3.114,0,5.263,0.648,6.385,1.927c0.526,0.6,0.861,1.227,1.023,1.917  c0.17,0.724,0.173,1.589,0.007,2.644l-0.012,0.077v0.676l0.526,0.298c0.443,0.235,0.795,0.504,1.065,0.812  c0.45,0.513,0.741,1.165,0.864,1.938c0.127,0.795,0.085,1.741-0.123,2.812c-0.24,1.232-0.628,2.305-1.152,3.183  c-0.482,0.809-1.096,1.48-1.825,2c-0.696,0.494-1.523,0.869-2.458,1.109c-0.906,0.236-1.939,0.355-3.072,0.355h-0.73  c-0.522,0-1.029,0.188-1.427,0.525c-0.399,0.344-0.663,0.814-0.744,1.328l-0.055,0.299l-0.924,5.855l-0.042,0.215  c-0.011,0.068-0.03,0.102-0.058,0.125c-0.025,0.021-0.061,0.035-0.096,0.035H7.266z" fill="#253B80"></path>
+    <path d="M23.048,7.667L23.048,7.667L23.048,7.667c-0.028,0.179-0.06,0.362-0.096,0.55  c-1.237,6.351-5.469,8.545-10.874,8.545H9.326c-0.661,0-1.218,0.48-1.321,1.132l0,0l0,0L6.596,26.83l-0.399,2.533  c-0.067,0.428,0.263,0.814,0.695,0.814h4.881c0.578,0,1.069-0.42,1.16-0.99l0.048-0.248l0.919-5.832l0.059-0.32  c0.09-0.572,0.582-0.992,1.16-0.992h0.73c4.729,0,8.431-1.92,9.513-7.476c0.452-2.321,0.218-4.259-0.978-5.622  C24.022,8.286,23.573,7.945,23.048,7.667z" fill="#179BD7"></path>
+    <path d="M21.754,7.151c-0.189-0.055-0.384-0.105-0.584-0.15c-0.201-0.044-0.407-0.083-0.619-0.117  c-0.742-0.12-1.555-0.177-2.426-0.177h-7.352c-0.181,0-0.353,0.041-0.507,0.115C9.927,6.985,9.675,7.306,9.614,7.699L8.05,17.605  l-0.045,0.289c0.103-0.652,0.66-1.132,1.321-1.132h2.752c5.405,0,9.637-2.195,10.874-8.545c0.037-0.188,0.068-0.371,0.096-0.55  c-0.313-0.166-0.652-0.308-1.017-0.429C21.941,7.208,21.848,7.179,21.754,7.151z" fill="#222D65"></path>
+    <path d="M9.614,7.699c0.061-0.393,0.313-0.714,0.652-0.876c0.155-0.074,0.326-0.115,0.507-0.115h7.352  c0.871,0,1.684,0.057,2.426,0.177c0.212,0.034,0.418,0.073,0.619,0.117c0.2,0.045,0.395,0.095,0.584,0.15  c0.094,0.028,0.187,0.057,0.278,0.086c0.365,0.121,0.704,0.264,1.017,0.429c0.368-2.347-0.003-3.945-1.272-5.392  C20.378,0.682,17.853,0,14.622,0h-9.38c-0.66,0-1.223,0.48-1.325,1.133L0.01,25.898c-0.077,0.49,0.301,0.932,0.795,0.932h5.791  l1.454-9.225L9.614,7.699z" fill="#253B80"></path>
+          </svg>
+        </button>
+        <button name="apple-pay" type="button">
+          <svg xml:space="preserve" viewBox="0 0 512 210.2" y="0px" x="0px" id="Layer_1" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+    <path d="M93.6,27.1C87.6,34.2,78,39.8,68.4,39c-1.2-9.6,3.5-19.8,9-26.1c6-7.3,16.5-12.5,25-12.9  C103.4,10,99.5,19.8,93.6,27.1 M102.3,40.9c-13.9-0.8-25.8,7.9-32.4,7.9c-6.7,0-16.8-7.5-27.8-7.3c-14.3,0.2-27.6,8.3-34.9,21.2  c-15,25.8-3.9,64,10.6,85c7.1,10.4,15.6,21.8,26.8,21.4c10.6-0.4,14.8-6.9,27.6-6.9c12.9,0,16.6,6.9,27.8,6.7  c11.6-0.2,18.9-10.4,26-20.8c8.1-11.8,11.4-23.3,11.6-23.9c-0.2-0.2-22.4-8.7-22.6-34.3c-0.2-21.4,17.5-31.6,18.3-32.2  C123.3,42.9,107.7,41.3,102.3,40.9 M182.6,11.9v155.9h24.2v-53.3h33.5c30.6,0,52.1-21,52.1-51.4c0-30.4-21.1-51.2-51.3-51.2H182.6z   M206.8,32.3h27.9c21,0,33,11.2,33,30.9c0,19.7-12,31-33.1,31h-27.8V32.3z M336.6,169c15.2,0,29.3-7.7,35.7-19.9h0.5v18.7h22.4V90.2  c0-22.5-18-37-45.7-37c-25.7,0-44.7,14.7-45.4,34.9h21.8c1.8-9.6,10.7-15.9,22.9-15.9c14.8,0,23.1,6.9,23.1,19.6v8.6l-30.2,1.8  c-28.1,1.7-43.3,13.2-43.3,33.2C298.4,155.6,314.1,169,336.6,169z M343.1,150.5c-12.9,0-21.1-6.2-21.1-15.7c0-9.8,7.9-15.5,23-16.4  l26.9-1.7v8.8C371.9,140.1,359.5,150.5,343.1,150.5z M425.1,210.2c23.6,0,34.7-9,44.4-36.3L512,54.7h-24.6l-28.5,92.1h-0.5  l-28.5-92.1h-25.3l41,113.5l-2.2,6.9c-3.7,11.7-9.7,16.2-20.4,16.2c-1.9,0-5.6-0.2-7.1-0.4v18.7C417.3,210,423.3,210.2,425.1,210.2z" id="XMLID_34_"></path>
+    <g>
+    </g>
+    <g>
+    </g>
+    <g>
+    </g>
+    <g>
+    </g>
+    <g>
+    </g>
+    <g>
+    </g>
+          </svg>
+        </button>
+        <button name="google-pay" type="button">
+     <svg fill="none" viewBox="0 0 80 39" height="39" width="80" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_134_34)">
+    <path fill="#5F6368" d="M37.8 19.7V29H34.8V6H42.6C44.5 6 46.3001 6.7 47.7001 8C49.1001 9.2 49.8 11 49.8 12.9C49.8 14.8 49.1001 16.5 47.7001 17.8C46.3001 19.1 44.6 19.8 42.6 19.8L37.8 19.7ZM37.8 8.8V16.8H42.8C43.9 16.8 45.0001 16.4 45.7001 15.6C47.3001 14.1 47.3 11.6 45.8 10.1L45.7001 10C44.9001 9.2 43.9 8.7 42.8 8.8H37.8Z"></path>
+    <path fill="#5F6368" d="M56.7001 12.8C58.9001 12.8 60.6001 13.4 61.9001 14.6C63.2001 15.8 63.8 17.4 63.8 19.4V29H61V26.8H60.9001C59.7001 28.6 58 29.5 56 29.5C54.3 29.5 52.8 29 51.6 28C50.5 27 49.8 25.6 49.8 24.1C49.8 22.5 50.4 21.2 51.6 20.2C52.8 19.2 54.5 18.8 56.5 18.8C58.3 18.8 59.7 19.1 60.8 19.8V19.1C60.8 18.1 60.4 17.1 59.6 16.5C58.8 15.8 57.8001 15.4 56.7001 15.4C55.0001 15.4 53.7 16.1 52.8 17.5L50.2001 15.9C51.8001 13.8 53.9001 12.8 56.7001 12.8ZM52.9001 24.2C52.9001 25 53.3001 25.7 53.9001 26.1C54.6001 26.6 55.4001 26.9 56.2001 26.9C57.4001 26.9 58.6 26.4 59.5 25.5C60.5 24.6 61 23.5 61 22.3C60.1 21.6 58.8 21.2 57.1 21.2C55.9 21.2 54.9 21.5 54.1 22.1C53.3 22.6 52.9001 23.3 52.9001 24.2Z"></path>
+    <path fill="#5F6368" d="M80 13.3L70.1 36H67.1L70.8 28.1L64.3 13.4H67.5L72.2 24.7H72.3L76.9 13.4H80V13.3Z"></path>
+    <path fill="#4285F4" d="M25.9 17.7C25.9 16.8 25.8 15.9 25.7 15H13.2V20.1H20.3C20 21.7 19.1 23.2 17.7 24.1V27.4H22C24.5 25.1 25.9 21.7 25.9 17.7Z"></path>
+    <path fill="#34A853" d="M13.1999 30.5999C16.7999 30.5999 19.7999 29.3999 21.9999 27.3999L17.6999 24.0999C16.4999 24.8999 14.9999 25.3999 13.1999 25.3999C9.7999 25.3999 6.7999 23.0999 5.7999 19.8999H1.3999V23.2999C3.6999 27.7999 8.1999 30.5999 13.1999 30.5999Z"></path>
+    <path fill="#FBBC04" d="M5.8001 19.8999C5.2001 18.2999 5.2001 16.4999 5.8001 14.7999V11.3999H1.4001C-0.499902 15.0999 -0.499902 19.4999 1.4001 23.2999L5.8001 19.8999Z"></path>
+    <path fill="#EA4335" d="M13.2 9.39996C15.1 9.39996 16.9 10.1 18.3 11.4L22.1 7.59996C19.7 5.39996 16.5 4.09996 13.3 4.19996C8.3 4.19996 3.7 6.99996 1.5 11.5L5.9 14.9C6.8 11.7 9.8 9.39996 13.2 9.39996Z"></path>
+    </g>
+    <defs>
+    <clipPath id="clip0_134_34">
+    <rect fill="white" height="38.1" width="80"></rect>
+    </clipPath>
+    </defs>
+    </svg>
+        </button>
+      </div>
+      <div class="separator">
+        <hr class="line">
+        <p>or pay using credit card</p>
+        <hr class="line">
+      </div>
+      <div class="credit-card-info--form">
+        <div class="input_container">
+          <label for="password_field" class="input_label">Card holder full name</label>
+          <input id="password_field" class="input_field" type="text" name="input-name" title="Inpit title" placeholder="Enter your full name">
+        </div>
+        <div class="input_container">
+          <label for="password_field" class="input_label">Card Number</label>
+          <input id="password_field" class="input_field" type="number" name="input-name" title="Inpit title" placeholder="0000 0000 0000 0000">
+        </div>
+        <div class="input_container">
+          <label for="password_field" class="input_label">Expiry Date / CVV</label>
+          <div class="split">
+          <input id="password_field" class="input_field" type="text" name="input-name" title="Expiry Date" placeholder="01/23">
+          <input id="password_field" class="input_field" type="number" name="cvv" title="CVV" placeholder="CVV">
+        </div>
+        </div>
+      </div>
+        <button class="purchase--btn">Checkout</button>
+    </form>
+    </div>
+    <hr><hr>
+    <!--otp verifier-->
+    <form class="form">
+        <p class="heading">Verify</p>
+        <svg class="check" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+        x="0px" y="0px" width="60px" height="60px" viewBox="0 0 60 60" xml:space="preserve">  <image id="image0" width="60" height="60" 
+        x="0" y="0" href="./otp_copy_product.png"></image>
+      </svg>
+        <div class="box">
+        <input class="input" type="password" maxlength="1">
+        <input class="input" type="password" maxlength="1"> 
+        <input class="input" type="password" maxlength="1">
+        <input class="input" type="password" maxlength="1">
+        </div>
+        <button class="btn1">Submit</button>
+        <button class="btn2">Back</button>
+      </form>
+      <hr><hr>
+      <!--same login and signup page-->
+      <div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="login">
+				<form class="form">
+					<label for="chk" aria-hidden="true">Log in</label>
+					<input class="input" type="email" name="email" placeholder="Email" required="">
+					<input class="input" type="password" name="pswd" placeholder="Password" required="">
+					<button>Log in</button>
+				</form>
+			</div>
+
+      <div class="register">
+				<form class="form">
+					<label for="chk" aria-hidden="true">Register</label>
+					<input class="input" type="text" name="txt" placeholder="Username" required="">
+					<input class="input" type="email" name="email" placeholder="Email" required="">
+					<input class="input" type="password" name="pswd" placeholder="Password" required="">
+					<button>Register</button>
+				</form>
+			</div>
+	</div>
+    <hr><hr>
+    <!--file upload pop up-->
+    <form class="modal">
+        <span class="close">X</span>
+            <div class="content">
+              <span class="title">Upload a File</span>
+              <p class="message">Select a file to upload from your computer or device.</p>
+              
+              <div class="actions">
+                <label for="file" class="button upload-btn">Choose File
+                  <input hidden="" type="file" id="file">
+                </label>
+              </div>
+              <div class="result">
+                 <div class="file-uploaded"><p>profile_pic.png</p></div>
+              </div>
+        </div>
+      </form>
+      <hr><hr>
+      <!--to do list-->
+      <div id="checklist">
+        <input checked="" value="1" name="r" type="checkbox" id="01">
+        <label for="01">Bread</label>
+        <input value="2" name="r" type="checkbox" id="02">
+        <label for="02">Cheese</label>
+        <input value="3" name="r" type="checkbox" id="03">
+        <label for="03">Coffee</label>
+      </div>
+      <hr><hr>
+      <!--description to image-->
+      <div class="card">
+        <div class="card-image"></div>
+          <div class="card-description">
+            <p class="text-title"> Card Title</p>
+            <p class="text-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+          </div>
+        </div>
+        <hr><hr>
+        <!--hover to see world-->
+        <div class="button">
+            <div class="box">H</div>
+            <div class="box">O</div>
+            <div class="box">V</div>
+            <div class="box">E</div>
+            <div class="box">R</div>
+        </div>
+        <hr><hr>
+        <!--hover to show tip-->
+        <div class="uiverse">
+            <span class="tooltip">uiverse.io</span>
+            <span>
+                Tooltip
+            </span>
+        </div>
+        <hr><hr>
+        <!--water waves in the texts-->
+        <div class="loader">
+            <span>uiverse</span>
+            <span>uiverse</span>
+        </div>
+        <hr><hr>
+        <!--rat in loader-->
+        <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
+            <div class="wheel"></div>
+            <div class="hamster">
+                <div class="hamster__body">
+                    <div class="hamster__head">
+                        <div class="hamster__ear"></div>
+                        <div class="hamster__eye"></div>
+                        <div class="hamster__nose"></div>
+                    </div>
+                    <div class="hamster__limb hamster__limb--fr"></div>
+                    <div class="hamster__limb hamster__limb--fl"></div>
+                    <div class="hamster__limb hamster__limb--br"></div>
+                    <div class="hamster__limb hamster__limb--bl"></div>
+                    <div class="hamster__tail"></div>
+                </div>
+            </div>
+            <div class="spoke"></div>
+        </div>
+        <hr><hr>
+        <!--add to fav button-->
+        <input type="checkbox" checked="checked" id="favorite" name="favorite-checkbox" value="favorite-button">
+<label for="favorite" class="container">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+  <div class="action">
+    <span class="option-1">Add to Favorites</span>
+    <span class="option-2">Added to Favorites</span>
+  </div>
+</label>
+<hr><hr>
+<!--heart switch-->
+<div class="love">
+    <input id="switch" type="checkbox">
+    <label class="love-heart" for="switch">
+      <i class="left"></i>
+      <i class="right"></i>
+      <i class="bottom"></i>
+      <div class="round"></div>
+    </label>
+  </div>
+  <hr><hr>
+  <!--profile card-->
+  <div class="card">
+    <div class="img">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"><path fill="none" d="M0 0h24v24H0z"></path><path d="M4.828 21l-.02.02-.021-.02H2.992A.993.993 0 0 1 2 20.007V3.993A1 1 0 0 1 2.992 3h18.016c.548 0 .992.445.992.993v16.014a1 1 0 0 1-.992.993H4.828zM20 15V5H4v14L14 9l6 6zm0 2.828l-6-6L6.828 19H20v-1.172zM8 11a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" fill="rgba(236,240,241,1)"></path></svg>
+    </div>
+    <span class="heading">John Doe</span>
+    <p>
+      <svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="30" height="30">
+        <path d="M962.267429 233.179429q-38.253714 56.027429-92.598857 95.451429 0.585143 7.972571 0.585143 23.990857 0 74.313143-21.723429 148.260571t-65.974857 141.970286-105.398857 120.32-147.456 83.456-184.539429 31.158857q-154.843429 0-283.428571-82.870857 19.968 2.267429 44.544 2.267429 128.585143 0 229.156571-78.848-59.977143-1.170286-107.446857-36.864t-65.170286-91.136q18.870857 2.852571 34.889143 2.852571 24.576 0 48.566857-6.290286-64-13.165714-105.984-63.707429t-41.984-117.394286l0-2.267429q38.838857 21.723429 83.456 23.405714-37.741714-25.161143-59.977143-65.682286t-22.308571-87.990857q0-50.322286 25.161143-93.110857 69.12 85.138286 168.301714 136.265143t212.260571 56.832q-4.534857-21.723429-4.534857-42.276571 0-76.580571 53.979429-130.56t130.56-53.979429q80.018286 0 134.875429 58.294857 62.317714-11.995429 117.174857-44.544-21.138286 65.682286-81.115429 101.741714 53.174857-5.705143 106.276571-28.598857z" fill="white"></path>
+      </svg>
+      <svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="30" height="30">
+        <path d="M123.52064 667.99143l344.526782 229.708899 0-205.136409-190.802457-127.396658zM88.051421 585.717469l110.283674-73.717469-110.283674-73.717469 0 147.434938zM556.025711 897.627196l344.526782-229.708899-153.724325-102.824168-190.802457 127.396658 0 205.136409zM512 615.994287l155.406371-103.994287-155.406371-103.994287-155.406371 103.994287zM277.171833 458.832738l190.802457-127.396658 0-205.136409-344.526782 229.708899zM825.664905 512l110.283674 73.717469 0-147.434938zM746.828167 458.832738l153.724325-102.824168-344.526782-229.708899 0 205.136409zM1023.926868 356.00857l0 311.98286q0 23.402371-19.453221 36.566205l-467.901157 311.98286q-11.993715 7.459506-24.57249 7.459506t-24.57249-7.459506l-467.901157-311.98286q-19.453221-13.163834-19.453221-36.566205l0-311.98286q0-23.402371 19.453221-36.566205l467.901157-311.98286q11.993715-7.459506 24.57249-7.459506t24.57249 7.459506l467.901157 311.98286q19.453221 13.163834 19.453221 36.566205z" fill="white"></path>
+      </svg>
+      <svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="30" height="30">
+        <path d="M950.930286 512q0 143.433143-83.748571 257.974857t-216.283429 158.573714q-15.433143 2.852571-22.601143-4.022857t-7.168-17.115429l0-120.539429q0-55.442286-29.696-81.115429 32.548571-3.437714 58.587429-10.313143t53.686857-22.308571 46.299429-38.034286 30.281143-59.977143 11.702857-86.016q0-69.12-45.129143-117.686857 21.138286-52.004571-4.534857-116.589714-16.018286-5.12-46.299429 6.290286t-52.589714 25.161143l-21.723429 13.677714q-53.174857-14.848-109.714286-14.848t-109.714286 14.848q-9.142857-6.290286-24.283429-15.433143t-47.689143-22.016-49.152-7.68q-25.161143 64.585143-4.022857 116.589714-45.129143 48.566857-45.129143 117.686857 0 48.566857 11.702857 85.723429t29.988571 59.977143 46.006857 38.253714 53.686857 22.308571 58.587429 10.313143q-22.820571 20.553143-28.013714 58.88-11.995429 5.705143-25.746286 8.557714t-32.548571 2.852571-37.449143-12.288-31.744-35.693714q-10.825143-18.285714-27.721143-29.696t-28.306286-13.677714l-11.410286-1.682286q-11.995429 0-16.603429 2.56t-2.852571 6.582857 5.12 7.972571 7.460571 6.875429l4.022857 2.852571q12.580571 5.705143 24.868571 21.723429t17.993143 29.110857l5.705143 13.165714q7.460571 21.723429 25.161143 35.108571t38.253714 17.115429 39.716571 4.022857 31.744-1.974857l13.165714-2.267429q0 21.723429 0.292571 50.834286t0.292571 30.866286q0 10.313143-7.460571 17.115429t-22.820571 4.022857q-132.534857-44.032-216.283429-158.573714t-83.748571-257.974857q0-119.442286 58.88-220.306286t159.744-159.744 220.306286-58.88 220.306286 58.88 159.744 159.744 58.88 220.306286z" fill="white"></path>
+      </svg>
+    </p>
+  </div>
+  <hr><hr>
+  <!--congralutaion page-->
+  <div class="level-up-notification">
+    <div class="confetti"></div>
+    <div class="level-up-text">Level Up!</div>
+  </div>
+  
+  <div class="confetti-container">
+    <div class="confetti">
+      <i class="square" style="--speed: 10; --bg: yellow"></i>
+      <i class="pentagram" style="--speed: 18; --bg: white"></i>
+      <i class="rectangle" style="--speed: 29; --bg: green"></i>
+      <i class="hexagram" style="--speed: 17; --bg: blue"></i>
+      <i class="pentagram" style="--speed: 33; --bg: red"></i>
+      <i class="dodecagram" style="--speed: 26; --bg: yellow"></i>
+      <i class="wavy-line" style="--speed: 24; --bg: pink"> </i>
+      <i class="wavy-line" style="--speed: 5; --bg: blue"></i>
+      <i class="square" style="--speed: 40; --bg: white"></i>
+      <i class="rectangle" style="--speed: 17; --bg: green"></i>
+      <i class="square" style="--speed: 25; --bg: white"></i>
+      <i class="rectangle" style="--speed: 18; --bg: green"></i>
+      <i class="wavy-line" style="--speed: 15; --bg: yellow"> </i>
+      <i class="pentagram" style="--speed: 32; --bg: yellow"></i>
+      <i class="square" style="--speed: 25; --bg: white"></i>
+      <i class="rectangle" style="--speed: 18; --bg: green"></i>
+      <i class="dodecagram" style="--speed: 37; --bg: yellow"></i>
+      <i class="wavy-line" style="--speed: 23; --bg: pink"></i>
+      <i class="dodecagram" style="--speed: 37; --bg: red"></i>
+      <i class="wavy-line" style="--speed: 37; --bg: pink"></i>
+      <i class="hexagram" style="--speed: 36; --bg: white"></i>
+      <i class="wavy-line" style="--speed: 32; --bg: green"></i>
+      <i class="pentagram" style="--speed: 32; --bg: yellow"></i>
+      <i class="square" style="--speed: 29; --bg: white"></i>
+      <i class="rectangle" style="--speed: 18; --bg: green"></i>
+      <i class="dodecagram" style="--speed: 37; --bg: red"></i>
+      <i class="wavy-line" style="--speed: 23; --bg: pink"> </i>
+      <i class="rectangle" style="--speed: 30; --bg: pink"></i>
+      <i class="square" style="--speed: 30; --bg: red"></i>
+      <i class="pentagram" style="--speed: 18; --bg: red"></i>
+      <i class="rectangle" style="--speed: 19; --bg: green"></i>
+      <i class="hexagram" style="--speed: 16; --bg: blue"></i>
+      <i class="pentagram" style="--speed: 23; --bg: red"></i>
+      <i class="dodecagram" style="--speed: 34; --bg: yellow"></i>
+      <i class="wavy-line" style="--speed: 39; --bg: pink"></i>
+      <i class="square" style="--speed: 40; --bg: purple"></i>
+      <i class="rectangle" style="--speed: 21; --bg: green"></i>
+      <i class="square" style="--speed: 14; --bg: white"></i>
+      <i class="rectangle" style="--speed: 38; --bg: green"></i>
+      <i class="dodecagram" style="--speed: 19; --bg: red"></i>
+      <i class="wavy-line" style="--speed: 29; --bg: pink"> </i>
+      <i class="hexagram" style="--speed: 21; --bg: white"></i>
+      <i class="wavy-line" style="--speed: 17; --bg: purple"></i>
+      <i class="pentagram" style="--speed: 32; --bg: yellow"></i>
+      <i class="square" style="--speed: 23; --bg: white"></i>
+      <i class="rectangle" style="--speed: 18; --bg: green"></i>
+      <i class="dodecagram" style="--speed: 37; --bg: red"></i>
+      <i class="wavy-line" style="--speed: 48; --bg: pink"> </i>
+      <i class="rectangle" style="--speed: 38; --bg: pink"></i>
+      <i class="pentagram" style="--speed: 13; --bg: red"></i>
+      <i class="dodecagram" style="--speed: 49; --bg: yellow"></i>
+      <i class="wavy-line" style="--speed: 19; --bg: cyan"></i>
+      <i class="square" style="--speed: 15; --bg: steelblue"></i>
+      <i class="square" style="--speed: 10; --bg: yellow"></i>
+      <i class="pentagram" style="--speed: 18; --bg: white"></i>
+      <i class="rectangle" style="--speed: 29; --bg: green"></i>
+      <i class="hexagram" style="--speed: 17; --bg: blue"></i>
+      <i class="pentagram" style="--speed: 33; --bg: red"></i>
+      <i class="dodecagram" style="--speed: 26; --bg: yellow"></i>
+      <i class="wavy-line" style="--speed: 24; --bg: pink"> </i>
+      <i class="wavy-line" style="--speed: 5; --bg: white"></i>
+      <i class="square" style="--speed: 40; --bg: purple"></i>
+      <i class="rectangle" style="--speed: 17; --bg: green"></i>
+      <i class="square" style="--speed: 25; --bg: white"></i>
+      <i class="rectangle" style="--speed: 18; --bg: green"></i>
+      <i class="wavy-line" style="--speed: 15; --bg: cyan"> </i>
+      <i class="pentagram" style="--speed: 32; --bg: yellow"></i>
+      <i class="square" style="--speed: 45; --bg: white"></i>
+      <i class="rectangle" style="--speed: 18; --bg: green"></i>
+      <i class="dodecagram" style="--speed: 37; --bg: red"></i>
+      <i class="wavy-line" style="--speed: 23; --bg: pink"> </i>
+      <i class="dodecagram" style="--speed: 37; --bg: red"></i>
+      <i class="wavy-line" style="--speed: 37; --bg: pink"> </i>
+      <i class="hexagram" style="--speed: 26; --bg: white"></i>
+      <i class="wavy-line" style="--speed: 32; --bg: cyan"></i>
+      <i class="pentagram" style="--speed: 32; --bg: yellow"></i>
+      <i class="square" style="--speed: 45; --bg: white"></i>
+      <i class="rectangle" style="--speed: 18; --bg: green"></i>
+      <i class="dodecagram" style="--speed: 37; --bg: red"></i>
+      <i class="wavy-line" style="--speed: 23; --bg: pink"> </i>
+      <i class="rectangle" style="--speed: 50; --bg: pink"></i>
+      <i class="square" style="--speed: 30; --bg: red"></i>
+      <i class="pentagram" style="--speed: 18; --bg: red"></i>
+      <i class="rectangle" style="--speed: 19; --bg: green"></i>
+      <i class="hexagram" style="--speed: 16; --bg: blue"></i>
+      <i class="pentagram" style="--speed: 23; --bg: red"></i>
+      <i class="dodecagram" style="--speed: 33; --bg: yellow"></i>
+      <i class="wavy-line" style="--speed: 39; --bg: white"></i>
+      <i class="square" style="--speed: 40; --bg: orange"></i>
+      <i class="rectangle" style="--speed: 21; --bg: green"></i>
+      <i class="square" style="--speed: 14; --bg: white"></i>
+      <i class="rectangle" style="--speed: 38; --bg: green"></i>
+      <i class="dodecagram" style="--speed: 19; --bg: red"></i>
+      <i class="wavy-line" style="--speed: 29; --bg: pink"> </i>
+      <i class="hexagram" style="--speed: 34; --bg: white"></i>
+      <i class="wavy-line" style="--speed: 17; --bg: indigo"></i>
+      <i class="pentagram" style="--speed: 32; --bg: yellow"></i>
+      <i class="square" style="--speed: 23; --bg: white"></i>
+      <i class="rectangle" style="--speed: 18; --bg: green"></i>
+      <i class="dodecagram" style="--speed: 37; --bg: red"></i>
+      <i class="wavy-line" style="--speed: 48; --bg: pink"> </i>
+      <i class="rectangle" style="--speed: 38; --bg: pink"></i>
+      <i class="pentagram" style="--speed: 13; --bg: red"></i>
+      <i class="dodecagram" style="--speed: 49; --bg: yellow"></i>
+      <i class="wavy-line" style="--speed: 19; --bg: purple"></i>
+      <i class="square" style="--speed: 15; --bg: cyan"></i>
+    </div>
+  </div>
+  <hr><hr>
+  <!--send animation button-->
+  <div class="container noselect">
+  
+    <label for="checkbox" id="clickHandler"></label>
+    <input type="checkbox" id="checkbox">
+  
+    <button id="button">
+      <p id="to-launch">let's launch!</p>
+      <p id="tag">by kennyotsu &lt;3</p>
+      <div id="platform"></div>
+    <div class="caution">
+      <div id="caution-left">LAUNCH ZONE</div>
+      <div id="caution-right">LAUNCH ZONE</div>
+    </div>
+    </button>
+    
+    <p id="to-hover">hover me</p>
+    <div id="shuttle-wrapper">
+      
+      <div id="shadow"></div>
+      <svg viewBox="0 0 230.24 542.46" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" id="b"><defs><linearGradient gradientUnits="userSpaceOnUse" gradientTransform="translate(160.35 -471.85) rotate(-7.06) scale(1.56 1.68)" y2="549.77" x2="-104.11" y1="545.09" x1="-130.63" id="d"><stop stop-color="#c6c6c6" offset="0"></stop><stop stop-color="#b1b1b1" offset="0"></stop><stop stop-color="#858585" offset=".02"></stop><stop stop-color="#606060" offset=".04"></stop><stop stop-color="#424242" offset=".05"></stop><stop stop-color="#2a2a2a" offset=".07"></stop><stop stop-color="#191919" offset=".09"></stop><stop stop-color="#101010" offset=".1"></stop><stop stop-color="#0d0d0d" offset=".13"></stop><stop stop-color="#454545" offset=".31"></stop><stop stop-color="#4c4c4c" offset=".33"></stop><stop stop-color="#484848" offset=".35"></stop><stop stop-color="#2b2c2b" offset=".52"></stop><stop stop-color="#171817" offset=".68"></stop><stop stop-color="#0b0c0b" offset=".84"></stop><stop stop-color="#070807" offset="1"></stop></linearGradient><linearGradient gradientUnits="userSpaceOnUse" y2="479.08" x2="113.37" y1="475.4" x1="70.56" id="e"><stop stop-opacity="0" stop-color="#fff" offset="0"></stop><stop stop-opacity="0" stop-color="#fff" offset=".32"></stop><stop stop-opacity="0" stop-color="#fff" offset=".38"></stop><stop stop-opacity="0" stop-color="#b3511b" offset="1"></stop></linearGradient><linearGradient gradientUnits="userSpaceOnUse" y2="270.33" x2="123.89" y1="269.31" x1="65.74" id="f"><stop stop-color="#e5e5e5" offset="0"></stop><stop stop-color="#e3e3e3" offset=".63"></stop><stop stop-color="#dcdcdc" offset=".85"></stop><stop stop-color="#d3d2d3" offset="1"></stop></linearGradient><linearGradient gradientUnits="userSpaceOnUse" y2="114.99" x2="112.45" y1="114.99" x1="70.84" id="g"><stop stop-color="#1a1a1a" offset="0"></stop><stop stop-color="#2a2a2a" offset=".05"></stop><stop stop-color="#434343" offset=".15"></stop><stop stop-color="#4d4d4d" offset=".2"></stop><stop stop-color="#474747" offset=".3"></stop><stop stop-color="#383838" offset=".69"></stop><stop stop-color="#333" offset="1"></stop></linearGradient><linearGradient xlink:href="#g" y2="142.07" x2="112.45" y1="142.07" x1="70.84" id="h"></linearGradient><linearGradient xlink:href="#g" y2="178.73" x2="112.45" y1="178.73" x1="70.84" id="i"></linearGradient><linearGradient xlink:href="#g" y2="254.03" x2="112.45" y1="254.03" x1="70.84" id="j"></linearGradient><linearGradient xlink:href="#g" y2="329.25" x2="112.45" y1="329.25" x1="70.84" id="k"></linearGradient><linearGradient xlink:href="#g" y2="386.88" x2="112.45" y1="386.88" x1="70.84" id="l"></linearGradient><linearGradient xlink:href="#g" y2="407.2" x2="112.45" y1="407.2" x1="70.84" id="m"></linearGradient><linearGradient xlink:href="#g" y2="414.79" x2="112.45" y1="414.79" x1="70.84" id="n"></linearGradient><linearGradient xlink:href="#g" y2="423.88" x2="112.45" y1="423.88" x1="70.84" id="o"></linearGradient><linearGradient xlink:href="#g" y2="435.68" x2="112.45" y1="435.68" x1="70.84" id="p"></linearGradient><linearGradient xlink:href="#g" y2="446.33" x2="112.45" y1="446.33" x1="70.84" id="q"></linearGradient><linearGradient gradientUnits="userSpaceOnUse" y2="280.59" x2="112.45" y1="280.59" x1="70.67" id="r"><stop stop-opacity="0" stop-color="#fff" offset="0"></stop><stop stop-opacity="0" stop-color="#fff" offset=".14"></stop><stop stop-opacity=".03" stop-color="#fff" offset=".19"></stop><stop stop-opacity=".08" stop-color="#fff" offset=".23"></stop><stop stop-opacity=".15" stop-color="#fff" offset=".25"></stop><stop stop-opacity=".23" stop-color="#fff" offset=".28"></stop><stop stop-opacity=".34" stop-color="#fff" offset=".3"></stop><stop stop-opacity=".47" stop-color="#fff" offset=".32"></stop><stop stop-opacity=".61" stop-color="#fff" offset=".34"></stop><stop stop-opacity=".78" stop-color="#fff" offset=".36"></stop><stop stop-opacity=".8" stop-color="#fff" offset=".36"></stop><stop stop-opacity="0" stop-color="#fff" offset=".38"></stop><stop stop-opacity="0" stop-color="#b3511b" offset="1"></stop></linearGradient><linearGradient gradientUnits="userSpaceOnUse" y2="464.45" x2="120.43" y1="455.38" x1="63.17" id="s"><stop stop-opacity="0" stop-color="#fff" offset="0"></stop><stop stop-opacity="0" stop-color="#fff" offset=".15"></stop><stop stop-opacity=".03" stop-color="#fff" offset=".2"></stop><stop stop-opacity=".08" stop-color="#fff" offset=".24"></stop><stop stop-opacity=".15" stop-color="#fff" offset=".27"></stop><stop stop-opacity=".23" stop-color="#fff" offset=".29"></stop><stop stop-opacity=".34" stop-color="#fff" offset=".32"></stop><stop stop-opacity=".47" stop-color="#fff" offset=".34"></stop><stop stop-opacity=".61" stop-color="#fff" offset=".36"></stop><stop stop-opacity=".78" stop-color="#fff" offset=".38"></stop><stop stop-opacity=".8" stop-color="#fff" offset=".38"></stop><stop stop-opacity="0" stop-color="#fff" offset=".39"></stop><stop stop-color="#d3d3d3" offset=".72"></stop><stop stop-color="#d2d1d2" offset="1"></stop></linearGradient><linearGradient xlink:href="#r" y2="91.43" x2="115.35" y1="87.78" x1="72.87" id="t"></linearGradient><linearGradient gradientUnits="userSpaceOnUse" y2="217.5" x2="194.16" y1="217.5" x1="102.87" id="v"><stop stop-color="#d68029" offset="0"></stop><stop stop-color="#b3511b" offset="1"></stop></linearGradient><linearGradient gradientUnits="userSpaceOnUse" y2="404.51" x2="158.77" y1="23.53" x1="134.44" id="w"><stop stop-opacity=".4" stop-color="#dd884e" offset=".02"></stop><stop stop-opacity=".67" stop-color="#b76031" offset=".42"></stop><stop stop-color="#882e0d" offset="1"></stop></linearGradient><linearGradient gradientUnits="userSpaceOnUse" y2="162" x2="194.16" y1="162" x1="102.66" id="x"><stop stop-color="#d8823a" offset="0"></stop><stop stop-color="#bf611e" offset="1"></stop></linearGradient><radialGradient gradientUnits="userSpaceOnUse" gradientTransform="translate(119.12 192.29) rotate(-104.58) scale(1 .55)" r="134.05" fy="71.95" fx="60.36" cy="64.81" cx="122.52" id="y"><stop stop-opacity="0" stop-color="#dd884e" offset=".72"></stop><stop stop-color="#ed9654" offset="1"></stop></radialGradient><radialGradient xlink:href="#y" gradientTransform="translate(176.37 200.83) rotate(-75.42) scale(1 -.55)" r="133.29" fy="72.72" fx="68.57" cy="65.62" cx="130.39" id="z"></radialGradient><linearGradient gradientUnits="userSpaceOnUse" y2="217.56" x2="142.83" y1="438.65" x1="161.35" id="aa"><stop stop-color="#a52c14" offset="0"></stop><stop stop-opacity=".84" stop-color="#a53014" offset=".19"></stop><stop stop-opacity=".44" stop-color="#a73b14" offset=".59"></stop><stop stop-opacity="0" stop-color="#aa4814" offset="1"></stop></linearGradient><linearGradient gradientUnits="userSpaceOnUse" gradientTransform="translate(189.08 .72) rotate(.18) scale(1.34 1)" y2="285.84" x2="-7.1" y1="284.22" x1="-43.8" id="ab"><stop stop-opacity="0" stop-color="#e65900" offset="0"></stop><stop stop-opacity=".03" stop-color="#e45800" offset=".13"></stop><stop stop-opacity=".12" stop-color="#de5502" offset=".29"></stop><stop stop-opacity=".27" stop-color="#d55104" offset=".46"></stop><stop stop-opacity=".48" stop-color="#c84b08" offset=".65"></stop><stop stop-opacity=".75" stop-color="#b7430c" offset=".84"></stop><stop stop-color="#a83c11" offset="1"></stop></linearGradient><linearGradient xlink:href="#d" y2="591.23" x2="-38.94" y1="586.55" x1="-65.46" id="ac"></linearGradient><linearGradient xlink:href="#e" y2="535.79" x2="222.95" y1="532.12" x1="180.14" id="ad"></linearGradient><linearGradient gradientUnits="userSpaceOnUse" y2="327.04" x2="233.47" y1="326.03" x1="175.32" id="ae"><stop stop-color="#e5e5e5" offset="0"></stop><stop stop-color="#e5e5e5" offset=".04"></stop><stop stop-color="#e5e5e5" offset=".05"></stop><stop stop-color="#e3e3e3" offset=".63"></stop><stop stop-color="#dcdcdc" offset=".86"></stop><stop stop-color="#d3d2d3" offset="1"></stop></linearGradient><linearGradient xlink:href="#g" y2="463.91" x2="222.03" y1="463.91" x1="180.42" id="af"></linearGradient><linearGradient xlink:href="#g" y2="471.51" x2="222.03" y1="471.51" x1="180.42" id="ag"></linearGradient><linearGradient xlink:href="#g" y2="480.59" x2="222.03" y1="480.59" x1="180.42" id="ah"></linearGradient><linearGradient xlink:href="#g" y2="492.4" x2="222.03" y1="492.4" x1="180.42" id="ai"></linearGradient><linearGradient gradientUnits="userSpaceOnUse" y2="385.97" x2="222.04" y1="385.97" x1="180.43" id="aj"><stop stop-color="#d45300" offset="0"></stop><stop stop-color="#d35200" offset="0"></stop><stop stop-color="#995021" offset=".07"></stop><stop stop-color="#704e38" offset=".13"></stop><stop stop-color="#564d47" offset=".18"></stop><stop stop-color="#4d4d4d" offset=".2"></stop><stop stop-color="#474747" offset=".3"></stop><stop stop-color="#383838" offset=".69"></stop><stop stop-color="#333" offset="1"></stop></linearGradient><linearGradient xlink:href="#aj" y2="443.6" y1="443.6" id="ak"></linearGradient><linearGradient xlink:href="#aj" y2="310.75" y1="310.75" id="al"></linearGradient><linearGradient xlink:href="#aj" y2="235.44" y1="235.44" id="am"></linearGradient><linearGradient xlink:href="#aj" y2="198.78" y1="198.78" id="an"></linearGradient><linearGradient xlink:href="#aj" y2="171.7" y1="171.7" id="ao"></linearGradient><linearGradient xlink:href="#g" y2="503.1" x2="222.03" y1="503.1" x1="180.42" id="ap"></linearGradient><linearGradient xlink:href="#r" y2="337.31" x2="222.03" y1="337.31" x1="180.25" id="aq"></linearGradient><linearGradient xlink:href="#s" y2="521.17" x2="230.01" y1="512.1" x1="172.75" id="ar"></linearGradient><linearGradient xlink:href="#r" y2="148.14" x2="224.93" y1="144.49" x1="182.45" id="as"></linearGradient><linearGradient gradientUnits="userSpaceOnUse" y2="424" x2="68.43" y1="414.65" x1="33.58" id="at"><stop stop-color="#e8e8e8" offset="0"></stop><stop stop-color="#f2f2f2" offset=".02"></stop><stop stop-color="#fafafa" offset=".04"></stop><stop stop-color="#fdfdfd" offset=".09"></stop><stop stop-color="#ededed" offset=".18"></stop><stop stop-color="#d3d3d3" offset=".38"></stop><stop stop-color="silver" offset=".58"></stop><stop stop-color="#b5b5b5" offset=".78"></stop><stop stop-color="#b2b2b2" offset="1"></stop></linearGradient><linearGradient xlink:href="#d" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" y2="466.58" x2="111.3" y1="461.9" x1="84.78" id="au"></linearGradient><linearGradient xlink:href="#d" gradientTransform="translate(108.68 -1.95) rotate(13.28)" y2="464.99" x2="78.06" y1="459.96" x1="49.55" id="av"></linearGradient><linearGradient xlink:href="#d" gradientTransform="translate(37.21 -2.14) rotate(4.64)" y2="468.28" x2="84.28" y1="465.78" x1="70.1" id="aw"></linearGradient><linearGradient gradientUnits="userSpaceOnUse" y2="317.69" x2="185.62" y1="317.69" x1="17.4" id="ax"><stop stop-color="#d5d5d5" offset="0"></stop><stop stop-color="#d1d1d1" offset="1"></stop></linearGradient><filter filterUnits="userSpaceOnUse" id="ay"><feOffset dy="-6" dx="13"></feOffset><feGaussianBlur stdDeviation="6" result="az"></feGaussianBlur><feFlood flood-opacity=".3" flood-color="#333"></feFlood><feComposite operator="in" in2="az"></feComposite><feComposite in="SourceGraphic"></feComposite></filter><linearGradient gradientUnits="userSpaceOnUse" y2="307.1" x2="131.64" y1="302.93" x1="52.2" id="ba"><stop stop-color="#fff" offset="0"></stop><stop stop-color="#f9f9f9" offset=".06"></stop><stop stop-color="#f5f5f5" offset=".18"></stop><stop stop-color="#c7c7c7" offset=".37"></stop><stop stop-color="#c3c3c3" offset=".55"></stop><stop stop-color="#b9b9b9" offset=".7"></stop><stop stop-color="#b4b4b4" offset=".75"></stop><stop stop-color="#d3d3d3" offset=".94"></stop></linearGradient><linearGradient gradientUnits="userSpaceOnUse" y2="427.46" x2="88.01" y1="180.46" x1="89.33" id="bb"><stop stop-color="#fff" offset="0"></stop><stop stop-opacity=".85" stop-color="#f7f8f8" offset=".07"></stop><stop stop-opacity=".65" stop-color="#eeefef" offset=".16"></stop><stop stop-opacity=".48" stop-color="#e5e7e7" offset=".26"></stop><stop stop-opacity=".33" stop-color="#dee0e1" offset=".37"></stop><stop stop-opacity=".21" stop-color="#d9dbdc" offset=".47"></stop><stop stop-opacity=".12" stop-color="#d4d7d8" offset=".58"></stop><stop stop-opacity=".05" stop-color="#d1d4d5" offset=".7"></stop><stop stop-opacity=".01" stop-color="#cfd2d3" offset=".83"></stop><stop stop-opacity="0" stop-color="#cfd2d3" offset="1"></stop></linearGradient><linearGradient gradientUnits="userSpaceOnUse" y2="413.58" x2="69.93" y1="523.99" x1="-.05" id="bc"><stop stop-color="#b8b7b7" offset="0"></stop><stop stop-color="#d1d0d0" offset=".4"></stop><stop stop-color="#fff" offset="1"></stop></linearGradient><linearGradient xlink:href="#bc" y2="466.09" x2="44.69" y1="505.35" x1="19.81" id="bd"></linearGradient><radialGradient gradientUnits="userSpaceOnUse" gradientTransform="translate(261.63 273.14) rotate(125.14) scale(1 .88)" r="39.33" fy="217.89" fx="66.91" cy="217.89" cx="66.91" id="be"><stop stop-color="#565656" offset="0"></stop><stop stop-color="#484848" offset=".1"></stop><stop stop-color="#323232" offset=".3"></stop><stop stop-color="#2b2b2b" offset=".42"></stop><stop stop-color="#2b2b2b" offset=".51"></stop><stop stop-color="#2b2b2b" offset="1"></stop></radialGradient><linearGradient gradientUnits="userSpaceOnUse" y2="380.41" x2="126.25" y1="374.95" x1="129.28" id="bf"><stop stop-color="#fff" offset="0"></stop><stop stop-color="#fff" offset=".27"></stop><stop stop-color="#fff" offset=".32"></stop><stop stop-color="#fdfdfe" offset=".33"></stop><stop stop-color="#f6f8fd" offset=".33"></stop><stop stop-color="#eaeffc" offset=".33"></stop><stop stop-color="#d9e3f9" offset=".33"></stop><stop stop-color="#c2d2f6" offset=".34"></stop><stop stop-color="#a7bef3" offset=".34"></stop><stop stop-color="#86a6ee" offset=".34"></stop><stop stop-color="#628ae9" offset=".34"></stop><stop stop-color="#386ce4" offset=".34"></stop><stop stop-color="#376be4" offset=".34"></stop><stop stop-color="#3d6ade" offset=".68"></stop><stop stop-color="#dd4f38" offset=".69"></stop><stop stop-color="#ff4915" offset="1"></stop></linearGradient><linearGradient gradientUnits="userSpaceOnUse" y2="440.89" x2="97.61" y1="437.49" x1="65.52" id="bg"><stop stop-color="#e8e8e8" offset="0"></stop><stop stop-color="#f2f2f2" offset=".05"></stop><stop stop-color="#fafafa" offset=".13"></stop><stop stop-color="#fdfdfd" offset=".27"></stop><stop stop-color="#f2f2f2" offset=".36"></stop><stop stop-color="#c3c3c3" offset=".78"></stop><stop stop-color="#b2b2b2" offset="1"></stop></linearGradient><linearGradient gradientUnits="userSpaceOnUse" y2="198.33" x2="136.86" y1="176.68" x1="77.37" id="bh"><stop stop-color="#0e0a09" offset="0"></stop><stop stop-color="#0e0a09" offset="0"></stop><stop stop-color="#2a2828" offset=".08"></stop><stop stop-color="#3b3b3b" offset=".14"></stop><stop stop-color="#424242" offset=".19"></stop><stop stop-color="#303030" offset=".26"></stop><stop stop-color="#090909" offset=".37"></stop><stop stop-color="#0c0b09" offset=".53"></stop><stop stop-color="#16110c" offset=".66"></stop><stop stop-color="#261c11" offset=".78"></stop><stop stop-color="#3e2b18" offset=".89"></stop><stop stop-color="#5c3f21" offset=".99"></stop><stop stop-color="#604122" offset="1"></stop></linearGradient><linearGradient gradientUnits="userSpaceOnUse" y2="443.62" x2="81.11" y1="411.38" x1="79.7" id="bi"><stop stop-opacity=".5" stop-color="#fff" offset="0"></stop><stop stop-opacity=".38" stop-color="#fefefe" offset=".07"></stop><stop stop-opacity=".27" stop-color="#fefefe" offset=".17"></stop><stop stop-opacity=".17" stop-color="#fdfdfd" offset=".27"></stop><stop stop-opacity=".09" stop-color="#fdfdfd" offset=".38"></stop><stop stop-opacity=".04" stop-color="#fdfdfd" offset=".52"></stop><stop stop-opacity="0" stop-color="#fdfdfd" offset=".68"></stop><stop stop-opacity="0" stop-color="#fdfdfd" offset="1"></stop></linearGradient><linearGradient gradientUnits="userSpaceOnUse" gradientTransform="translate(-8.09 4.61) rotate(-2.79)" y2="170.77" x2="91.3" y1="162.16" x1="94.5" id="bj"><stop stop-color="#3f3f3f" offset=".13"></stop><stop stop-color="#090909" offset="1"></stop></linearGradient><linearGradient xlink:href="#bj" gradientTransform="translate(31.76 -5.44) rotate(5.03) scale(.81 1)" y2="171.47" x2="86.96" y1="164.53" x1="89.54" id="bk"></linearGradient><linearGradient xlink:href="#bj" gradientTransform="translate(-16.29 4.64) rotate(-2.49) scale(1.1 1)" y2="172.9" x2="94.31" y1="166.02" x1="96.87" id="bl"></linearGradient></defs><g id="c"><g><path style="fill:url(#d);" d="M103.28,444.18l8.98,31.12s-3.3,10.51-20.97,10.46c-17.68-.05-21.18-10.93-21.18-10.93l9.38-29.9,23.8-.74Z"></path><path style="fill:url(#e);" d="M91.32,474.9c16.6,0,20.97-4.48,20.97-4.48v3.39s-3.88,11.81-20.97,11.81-20.64-11.23-20.64-11.23v-3.96s4.05,4.48,20.64,4.48Z"></path><path style="fill:url(#f);" d="M70.84,127.87s-.02-17.57,0-20.15,14.01-38.61,16.18-44.26,6.7-5.39,8.75,0,16.68,41.99,16.68,43.93-.04,330.65,0,333.41,8.09,17.79,8.09,19.32,1.69,20.06-29.06,20.06-29.06-18.5-29.06-20.06,8.13-16.64,8.26-19.32,.17-312.94,.17-312.94Z"></path><g><path style="fill:url(#g);" d="M91.48,119.36c16.6,0,20.97-11.97,20.97-11.97v3.39s-3.88,11.81-20.97,11.81-20.64-11.23-20.64-11.23v-3.96s4.05,11.97,20.64,11.97Z"></path><path style="fill:url(#h);" d="M91.48,146.44c16.6,0,20.97-11.97,20.97-11.97v3.39s-3.88,11.81-20.97,11.81-20.64-11.23-20.64-11.23v-3.96s4.05,11.97,20.64,11.97Z"></path><path style="fill:url(#i);" d="M91.48,183.1c16.6,0,20.97-11.97,20.97-11.97v3.39s-3.88,11.81-20.97,11.81-20.64-11.23-20.64-11.23v-3.96s4.05,11.97,20.64,11.97Z"></path><path style="fill:url(#j);" d="M91.48,258.41c16.6,0,20.97-11.97,20.97-11.97v3.39s-3.88,11.81-20.97,11.81-20.64-11.23-20.64-11.23v-3.96s4.05,11.97,20.64,11.97Z"></path><path style="fill:url(#k);" d="M91.48,333.63c16.6,0,20.97-11.97,20.97-11.97v3.39s-3.88,11.81-20.97,11.81-20.64-11.23-20.64-11.23v-3.96s4.05,11.97,20.64,11.97Z"></path><path style="fill:url(#l);" d="M91.48,391.26c16.6,0,20.97-11.97,20.97-11.97v3.39s-3.88,11.81-20.97,11.81-20.64-11.23-20.64-11.23v-3.96s4.05,11.97,20.64,11.97Z"></path><path style="fill:url(#m);" d="M91.48,411.57c16.6,0,20.97-11.97,20.97-11.97v3.39s-3.88,11.81-20.97,11.81-20.64-11.23-20.64-11.23v-3.96s4.05,11.97,20.64,11.97Z"></path><path style="fill:url(#n);" d="M91.48,419.17c16.6,0,20.97-11.97,20.97-11.97v3.39s-3.88,11.81-20.97,11.81-20.64-11.23-20.64-11.23v-3.96s4.05,11.97,20.64,11.97Z"></path><path style="fill:url(#o);" d="M91.48,428.25c16.6,0,20.97-11.97,20.97-11.97v3.39s-3.88,11.81-20.97,11.81-20.64-11.23-20.64-11.23v-3.96s4.05,11.97,20.64,11.97Z"></path><path style="fill:url(#p);" d="M91.48,440.06c16.6,0,20.97-11.97,20.97-11.97v3.39s-3.88,11.81-20.97,11.81-20.64-11.23-20.64-11.23v-3.96s4.05,11.97,20.64,11.97Z"></path><path style="fill:url(#q);" d="M91.48,450.71c16.6,0,20.97-11.97,20.97-11.97v3.39s-3.88,11.81-20.97,11.81-20.64-11.23-20.64-11.23v-3.96s4.05,11.97,20.64,11.97Z"></path></g><path style="fill:url(#r);" d="M70.84,127.87s-.02-17.57,0-20.15c.01-1.29,2.64,11.56,20.81,11.56s20.81-12.86,20.81-11.89c0,1.94-.04,330.65,0,333.41,.02,1.36-3.06,13.05-20.97,13.05s-20.87-11.69-20.81-13.05c.12-2.68,.17-312.94,.17-312.94Z"></path><path style="fill:url(#s);" d="M91.48,480.19c32.61,0,29.06-20.06,29.06-20.06l-8.1-18.08s-2.39,11.81-20.97,11.81-20.81-13.05-20.81-13.05l-8.26,19.32s-3.55,20.06,29.06,20.06Z"></path><path style="fill:url(#t);" d="M70.84,107.72s4.18,11.56,20.81,11.56,20.81-11.89,20.81-11.89c0,0-14.86-40.33-17.12-44.93s-6.38-3.6-7.87,0-16.63,45.27-16.63,45.27Z"></path></g><g id="u"><path style="fill:url(#v);" d="M131.16,17c2.99-4.19,17-17,18-17s12.08,8.58,17.78,17c14.22,21,27.22,38,27.22,62V411c0,33-92,31-91,0s-1-299,0-329,23-58,28-65Z"></path><path style="fill:url(#w); opacity:.22;" d="M131.05,17c2.99-4.19,17-17,18-17s12.08,8.58,17.78,17c14.22,21,27.22,38,27.22,62V411c0,33-92,31-91,0s-1-299,0-329,23-58,28-65Z"></path><path style="fill:url(#x);" d="M102.66,117.5s6,24,45.5,24,46-24,46-24l-.5,74s-12.5,15-45,15-46-15-46-15V117.5Z"></path><path style="fill:url(#y);" d="M149.05,0s9.4,5.19,17.78,17,27.22,35.73,27.22,62,.11,38.5,.11,38.5c0,0-1.15,6.16-9.28,12.79-6.39,5.2-16.71,11.21-36.72,11.21-45.5,0,.89-141.5,.89-141.5Z"></path><path style="fill:url(#z);" d="M147.97,1.5s-9.4,5.19-17.78,17c-8.38,11.81-27.22,35.73-27.22,62,0,26.27-.11,38.5-.11,38.5,0,0,1.84,8.63,15.38,15.74,6.82,3.58,15.4,6.75,30.63,6.75,45.5,0-.9-140-.9-140Z"></path><path style="fill:url(#aa);" d="M105.66,209.83l-2.46,202.5s.23,32.96,46.76,33.93c43.35,.91,46.66-21.97,46.66-21.97l.11-231.42-91.07,16.96Z"></path><path style="fill:url(#ab);" d="M193.63,138.78s-2.38,275.86-2.31,278.63c.03,1.35-9.7,16.7-33.71,16.62s-33.8-23.73-33.71-25.09c.14-2.12-14.71-164.59,11.97-234.48,7.01-18.36,41.9,7.85,57.76-35.68Z"></path></g><g><path style="fill:url(#ac);" d="M212.86,500.89l8.98,31.12s-3.3,10.51-20.97,10.46c-17.68-.05-21.18-10.93-21.18-10.93l9.38-29.9,23.8-.74Z"></path><path style="fill:url(#ad);" d="M200.9,531.62c16.6,0,20.97-4.48,20.97-4.48v3.39s-3.88,11.81-20.97,11.81-20.64-11.23-20.64-11.23v-3.96s4.05,4.48,20.64,4.48Z"></path><path style="fill:url(#ae);" d="M180.42,184.58s-.02-17.57,0-20.15,14.01-38.61,16.18-44.26,6.7-5.39,8.75,0c2.05,5.39,16.68,41.99,16.68,43.93s-.04,330.65,0,333.41,8.09,17.79,8.09,19.32,1.69,20.06-29.06,20.06-29.06-18.5-29.06-20.06,8.13-16.64,8.26-19.32,.17-312.94,.17-312.94Z"></path><g><path style="fill:url(#af);" d="M201.06,468.29c16.6,0,20.97-11.97,20.97-11.97v3.39s-3.88,11.81-20.97,11.81-20.64-11.23-20.64-11.23v-3.96s4.05,11.97,20.64,11.97Z"></path><path style="fill:url(#ag);" d="M201.06,475.89c16.6,0,20.97-11.97,20.97-11.97v3.39s-3.88,11.81-20.97,11.81-20.64-11.23-20.64-11.23v-3.96s4.05,11.97,20.64,11.97Z"></path><path style="fill:url(#ah);" d="M201.06,484.97c16.6,0,20.97-11.97,20.97-11.97v3.39s-3.88,11.81-20.97,11.81-20.64-11.23-20.64-11.23v-3.96s4.05,11.97,20.64,11.97Z"></path><path style="fill:url(#ai);" d="M201.06,496.78c16.6,0,20.97-11.97,20.97-11.97v3.39s-3.88,11.81-20.97,11.81-20.64-11.23-20.64-11.23v-3.96s4.05,11.97,20.64,11.97Z"></path><path style="fill:url(#aj);" d="M201.07,390.34c16.6,0,20.97-11.97,20.97-11.97v3.39s-3.88,11.81-20.97,11.81-20.64-11.23-20.64-11.23v-3.96s4.05,11.97,20.64,11.97Z"></path><path style="fill:url(#ak);" d="M201.07,447.98c16.6,0,20.97-11.97,20.97-11.97v3.39s-3.88,11.81-20.97,11.81-20.64-11.23-20.64-11.23v-3.96s4.05,11.97,20.64,11.97Z"></path><path style="fill:url(#al);" d="M201.07,315.12c16.6,0,20.97-11.97,20.97-11.97v3.39s-3.88,11.81-20.97,11.81-20.64-11.23-20.64-11.23v-3.96s4.05,11.97,20.64,11.97Z"></path><path style="fill:url(#am);" d="M201.07,239.82c16.6,0,20.97-11.97,20.97-11.97v3.39s-3.88,11.81-20.97,11.81-20.64-11.23-20.64-11.23v-3.96s4.05,11.97,20.64,11.97Z"></path><path style="fill:url(#an);" d="M201.07,203.16c16.6,0,20.97-11.97,20.97-11.97v3.39s-3.88,11.81-20.97,11.81-20.64-11.23-20.64-11.23v-3.96s4.05,11.97,20.64,11.97Z"></path><path style="fill:url(#ao);" d="M201.07,176.08c16.6,0,20.97-11.97,20.97-11.97v3.39s-3.88,11.81-20.97,11.81-20.64-11.23-20.64-11.23v-3.96s4.05,11.97,20.64,11.97Z"></path><path style="fill:url(#ap);" d="M201.06,507.47c16.6,0,20.97-11.97,20.97-11.97v3.39s-3.88,11.81-20.97,11.81-20.64-11.23-20.64-11.23v-3.96s4.05,11.97,20.64,11.97Z"></path></g><path style="fill:url(#aq);" d="M180.42,184.58s-.02-17.57,0-20.15c.01-1.29,2.64,11.56,20.81,11.56s20.81-12.86,20.81-11.89c0,1.94-.04,330.65,0,333.41,.02,1.36-3.06,13.05-20.97,13.05s-20.87-11.69-20.81-13.05c.12-2.68,.17-312.94,.17-312.94Z"></path><path style="fill:url(#ar);" d="M201.06,536.9c32.61,0,29.06-20.06,29.06-20.06l-8.1-18.08s-2.39,11.81-20.97,11.81-20.81-13.05-20.81-13.05l-8.26,19.32s-3.55,20.06,29.06,20.06Z"></path><path style="fill:url(#as);" d="M180.42,164.44s4.18,11.56,20.81,11.56,20.81-11.89,20.81-11.89c0,0-14.86-40.33-17.12-44.93s-6.38-3.6-7.87,0-16.63,45.27-16.63,45.27Z"></path></g><g><path style="fill:url(#at);" d="M32.69,439.07c-.14,2.86-2.97,10.79,15.3,12.66,17.94,1.43,19.6-8.7,19.6-8.7,0,0,3.28-21.39,3.85-27.96,.39-4.44-.33-10.13-1.07-16.32-.71-2.13-18.48-13.36-19.51-13.29-7.93,.55-10.9,6.5-12.66,10.9-1.45,3.62-5.38,39.85-5.51,42.72Z"></path><path style="fill:url(#au);" d="M106.84,454.41l3.26,19.01s-2.53,3.14-13.76,1.82-12.99-5.17-12.99-5.17l8.31-16.95,15.18,1.3Z"></path><path style="fill:url(#av);" d="M76.16,454.7l-1.28,20.7s-3.42,2.66-14.85-1.5-12.31-8.62-12.31-8.62l12.88-15.68,15.56,5.11Z"></path><path style="fill:url(#aw);" d="M81.49,464.75l.92,10.27s-1.48,1.56-7.41,.37c-5.93-1.19-6.7-3.32-6.7-3.32l5.16-8.67,8.03,1.35Z"></path><path style="fill:url(#ax); filter:url(#ay); stroke:#2b2b2b; stroke-miterlimit:10; stroke-width:2px;" d="M185.62,458.89l-94.24-40.73L18.5,351.66l-1.1-9.25,5.94-20.7,39.85-24,17.39-81.03s3.55-39.08,22.06-40.18,23.1,49.89,23.1,49.89l14.51,118.44,40.51,77.5,4.84,24.44v12.11Z"></path><line style="fill:none; stroke:#2b2b2b; stroke-miterlimit:10; stroke-width:.75px;" y2="426.74" x2="126.39" y1="448.76" x1="183.2"></line><line style="fill:none; stroke:#2b2b2b; stroke-miterlimit:10; stroke-width:.75px;" y2="342.41" x2="17.4" y1="368.13" x1="51.09"></line><text style="fill:#333; font-size:12.27px;" transform="translate(27.32 341.67) rotate(34.86) scale(1.05 .83) skewX(27.74)"><tspan style="font-family:Bahnschrift-Bold, Bahnschrift; font-variation-settings:'wght' 700, 'wdth' 100; font-weight:700; letter-spacing:0em;" y="0" x="0">U</tspan><tspan style="font-family:Bahnschrift-Bold, Bahnschrift; font-variation-settings:'wght' 700, 'wdth' 100; font-weight:700;" y="0" x="7.92">I</tspan><tspan style="font-family:Bahnschrift, Bahnschrift; font-variation-settings:'wght' 400, 'wdth' 100; letter-spacing:0em;" y="0" x="11.3">V</tspan><tspan style="font-family:Bahnschrift, Bahnschrift; font-variation-settings:'wght' 400, 'wdth' 100;" y="0" x="18.56">E</tspan><tspan style="font-family:Bahnschrift, Bahnschrift; font-variation-settings:'wght' 400, 'wdth' 100; letter-spacing:-.02em;" y="0" x="25.89">R</tspan><tspan style="font-family:Bahnschrift, Bahnschrift; font-variation-settings:'wght' 400, 'wdth' 100; letter-spacing:0em;" y="0" x="33.65">S</tspan><tspan style="font-family:Bahnschrift, Bahnschrift; font-variation-settings:'wght' 400, 'wdth' 100;" y="0" x="41.08">E</tspan></text><path style="fill:url(#ba);" d="M123.31,450.69s-12.22,5.01-20.31,5.45-27.69-1.87-36.99-3.63-18.17-7.27-18.17-7.27l-1.49-30.72,2.31-34.68s6.39-114.92,6.88-121.36,.41-18.29,1.21-25.12,8.31-31.4,9.06-32.72,3.66-3.44,3.66-3.44l9.08-22.79s1.32-1.93,7.27-9.41c3.07-3.87,8.37-10.11,13.21-10.4,4.52-.27,8.82,5.09,10.4,7.6,2.52,4,3.28,5.35,4.36,7.99s11.06,32.96,11.99,43.03,4.46,120.55,4.46,120.55l-6.94,116.92Z"></path><path style="fill:url(#bb);" d="M123.31,450.69s-12.22,5.01-20.31,5.45c-8.09,.44-27.69-1.87-36.99-3.63s-18.17-7.27-18.17-7.27l-1.49-30.72,2.31-34.68s6.39-114.92,6.88-121.36,.41-18.29,1.21-25.12,8.31-31.4,9.06-32.72,3.66-3.44,3.66-3.44l9.08-22.79s1.32-1.93,7.27-9.41c3.07-3.87,8.37-10.11,13.21-10.4,4.52-.27,8.82,5.09,10.4,7.6,2.52,4,3.28,5.35,4.36,7.99s11.06,32.96,11.99,43.03,4.46,120.55,4.46,120.55l-6.94,116.92Z"></path><polygon style="fill:url(#bc); stroke:#4c4c4c; stroke-miterlimit:10;" points="56.81 407.75 49.88 415.51 1.82 501.05 .5 504.69 .5 524.34 51.53 472.32 58.96 448.54 61.77 408.41 56.81 407.75"></polygon><polygon style="fill:url(#bd); stroke:#5b5b5b; stroke-miterlimit:10;" points="48.05 475.95 51.28 458.33 52.01 454.37 51.64 456.37 14.76 500.65 9.73 506.09 8.49 516.23 9.9 515.12 48.05 475.95"></polygon><path style="fill:url(#be);" d="M78.06,232.21c1.17,1.37-.73,7.04,.83,8.64,3.18,3.27,9.84,2.28,9.98,1.98,3.28-6.94,1.14-17.53-1.04-22.1s-7.68-9.41-7.95-9.55-3.12-3.98-3.3-4.07c-.5-.25-3.22,.25-3.22,.25,0,0-7.14,3.92-8.02,4.71-4.79,4.29-6.89,12.07-6.32,11.13,.51-.84,6.87-3.31,10.71-2.96,.76,.07,6.91,10.31,8.34,11.97Z"></path><path style="fill:none; stroke:#777574; stroke-miterlimit:10; stroke-width:.75px;" d="M78.27,248.23c.82-.21,3.44,1.21,6.65,1.57,4.12,.46,9.01-.06,9.99,.21,3.56,.95,3.3,8.34-.91,10.07-.87,.36-5.26,1-9.29,.7-3.3-.25-6.42-1.71-7.27-2.39-2.57-2.09-1.76-9.49,.83-10.16Z"></path><text style="fill:#666; font-family:Bahnschrift, Bahnschrift; font-size:5.69px; font-variation-settings:'wght' 400, 'wdth' 100;" transform="translate(121.16 383.28) rotate(28.29) scale(1.26 .89) skewX(19.94)"><tspan y="0" x="0">@ken</tspan><tspan style="letter-spacing:-.01em;" y="0" x="14.3">n</tspan><tspan style="letter-spacing:0em;" y="0" x="17.4">y</tspan><tspan style="letter-spacing:0em;" y="0" x="20.09">otsu</tspan></text><text style="fill:#333; font-size:12.31px;" transform="translate(120.21 399.04) rotate(28.29) scale(.98 .89) skewX(24.96)"><tspan style="font-family:Bahnschrift-Bold, Bahnschrift; font-variation-settings:'wght' 700, 'wdth' 100; font-weight:700; letter-spacing:0em;" y="0" x="0">U</tspan><tspan style="font-family:Bahnschrift-Bold, Bahnschrift; font-variation-settings:'wght' 700, 'wdth' 100; font-weight:700;" y="0" x="7.95">I</tspan><tspan style="font-family:Bahnschrift, Bahnschrift; font-variation-settings:'wght' 400, 'wdth' 100; letter-spacing:0em;" y="0" x="11.33">V</tspan><tspan style="font-family:Bahnschrift, Bahnschrift; font-variation-settings:'wght' 400, 'wdth' 100;" y="0" x="18.62">E</tspan><tspan style="font-family:Bahnschrift, Bahnschrift; font-variation-settings:'wght' 400, 'wdth' 100; letter-spacing:-.02em;" y="0" x="25.98">R</tspan><tspan style="font-family:Bahnschrift, Bahnschrift; font-variation-settings:'wght' 400, 'wdth' 100; letter-spacing:0em;" y="0" x="33.76">S</tspan><tspan style="font-family:Bahnschrift, Bahnschrift; font-variation-settings:'wght' 400, 'wdth' 100;" y="0" x="41.22">E</tspan></text><polygon style="fill:url(#bf); opacity:.82;" points="122.02 377.86 133.5 384.43 133.77 377.45 122.02 370.93 122.02 377.86"></polygon><path style="fill:url(#bg);" d="M61.77,455.26c-.14,2.86-2.97,10.79,15.3,12.66,17.94,1.43,19.6-8.7,19.6-8.7,0,0,3.28-21.39,3.85-27.96,.39-4.44-.33-10.13-1.07-16.32-.71-2.13-3.14-3.64-4.16-3.45-3.11,.57-17.2,2.93-20.86,4.28s-9.03,9.77-9.03,9.77c0,0-3.5,26.86-3.63,29.72Z"></path><path style="fill:url(#bh);" d="M99.03,154.6c15.8,0,23.06,42.39,25.97,53.78,.59,3.25,2.05,16.9,2.05,16.9,0,0-16.95-10.91-19.38-28.19s-12.66-23.72-18.17-24.39-13.29,7.56-13.29,7.56c0,0,.61-2.93,2.33-5.85,4.4-7.46,13.63-19.82,20.48-19.82Z"></path><text style="fill:#333; font-size:12.31px;" transform="translate(112.43 320.11) rotate(-88.85) scale(.98) skewX(13.92)"><tspan style="font-family:Bahnschrift-Bold, Bahnschrift; font-variation-settings:'wght' 700, 'wdth' 100; font-weight:700; letter-spacing:0em;" y="0" x="0">U</tspan><tspan style="font-family:Bahnschrift-Bold, Bahnschrift; font-variation-settings:'wght' 700, 'wdth' 100; font-weight:700;" y="0" x="7.95">I</tspan><tspan style="font-family:Bahnschrift, Bahnschrift; font-variation-settings:'wght' 400, 'wdth' 100; letter-spacing:0em;" y="0" x="11.33">V</tspan><tspan style="font-family:Bahnschrift, Bahnschrift; font-variation-settings:'wght' 400, 'wdth' 100;" y="0" x="18.62">E</tspan><tspan style="font-family:Bahnschrift, Bahnschrift; font-variation-settings:'wght' 400, 'wdth' 100; letter-spacing:-.02em;" y="0" x="25.98">R</tspan><tspan style="font-family:Bahnschrift, Bahnschrift; font-variation-settings:'wght' 400, 'wdth' 100; letter-spacing:0em;" y="0" x="33.76">S</tspan><tspan style="font-family:Bahnschrift, Bahnschrift; font-variation-settings:'wght' 400, 'wdth' 100;" y="0" x="41.22">E</tspan></text><path style="fill:url(#bi);" d="M61.77,455.26c-.14,2.86-2.97,10.79,15.3,12.66,17.94,1.43,19.6-8.7,19.6-8.7,0,0,3.28-21.39,3.85-27.96,.39-4.44-.33-10.13-1.07-16.32-.71-2.13-3.14-3.64-4.16-3.45-3.11,.57-17.2,2.93-20.86,4.28s-9.03,9.77-9.03,9.77c0,0-3.5,26.86-3.63,29.72Z"></path><line style="fill:#fff; stroke:#2b2b2b; stroke-miterlimit:10; stroke-width:.5px;" y2="426.74" x2="126.39" y1="432.01" x1="124.42"></line><path style="fill:url(#bj);" d="M91.12,170.73c2.47,.54,5.71-8.54,3.35-8.72s-5.82,8.18-3.35,8.72Z"></path><path style="fill:url(#bk);" d="M86.98,171.58c1.41,.66,4.25-6.41,2.87-6.77s-4.28,6.1-2.87,6.77Z"></path><path style="fill:url(#bl);" d="M94.44,172.88c2.08,.44,4.88-6.87,2.88-7.01s-4.96,6.57-2.88,7.01Z"></path></g></g></svg>
+    </div>
+  
+  </div>
+  
+<hr><hr>
+<!--zoom to content-->
+<div class="card">
+    <div class="heading">Join the Open-Source <span>Galaxy</span></div>
+    <div class="content">
+        <div class="item item--create">
+            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 12L18.3431 17.6569L16.9289 16.2426L21.1716 12L16.9289 7.75736L18.3431 6.34315L24 12ZM2.82843 12L7.07107 16.2426L5.65685 17.6569L0 12L5.65685 6.34315L7.07107 7.75736L2.82843 12ZM9.78845 21H7.66009L14.2116 3H16.3399L9.78845 21Z" fill="currentColor"></path>
+            </svg>
+            <span>Create</span>
+        </div>
+        <div class="item item--post">
+            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.99958 12.9998C4.99958 7.91186 7.90222 3.56348 11.9996 1.81787C16.0969 3.56348 18.9996 7.91186 18.9996 12.9998C18.9996 13.8227 18.9236 14.6263 18.779 15.4026L20.7194 17.2352C20.8845 17.3911 20.9238 17.6388 20.815 17.8381L18.3196 22.4132C18.1873 22.6556 17.8836 22.7449 17.6412 22.6127C17.5993 22.5898 17.5608 22.5611 17.5271 22.5273L15.2925 20.2927C15.1049 20.1052 14.8506 19.9998 14.5854 19.9998H9.41379C9.14857 19.9998 8.89422 20.1052 8.70668 20.2927L6.47209 22.5273C6.27683 22.7226 5.96025 22.7226 5.76498 22.5273C5.73122 22.4935 5.70246 22.4551 5.67959 22.4132L3.18412 17.8381C3.07537 17.6388 3.11464 17.3911 3.27975 17.2352L5.22014 15.4026C5.07551 14.6263 4.99958 13.8227 4.99958 12.9998ZM6.47542 19.6955L7.29247 18.8785C7.85508 18.3159 8.61814 17.9998 9.41379 17.9998H14.5854C15.381 17.9998 16.1441 18.3159 16.7067 18.8785L17.5237 19.6955L18.5056 17.8954L17.4058 16.8566C16.9117 16.39 16.6884 15.7044 16.8128 15.0363C16.9366 14.3721 16.9996 13.691 16.9996 12.9998C16.9996 9.13025 15.0045 5.69953 11.9996 4.04021C8.99462 5.69953 6.99958 9.13025 6.99958 12.9998C6.99958 13.691 7.06255 14.3721 7.18631 15.0363C7.31078 15.7044 7.08746 16.39 6.59338 16.8566L5.49353 17.8954L6.47542 19.6955ZM11.9996 12.9998C10.895 12.9998 9.99958 12.1044 9.99958 10.9998C9.99958 9.89525 10.895 8.99982 11.9996 8.99982C13.1041 8.99982 13.9996 9.89525 13.9996 10.9998C13.9996 12.1044 13.1041 12.9998 11.9996 12.9998Z" fill="currentColor"></path>
+            </svg>
+            <span>Post</span>
+        </div>
+        <div class="item item--inspire">
+            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.6144 17.7956C10.277 18.5682 9.20776 18.5682 8.8704 17.7956L7.99275 15.7854C7.21171 13.9966 5.80589 12.5726 4.0523 11.7942L1.63658 10.7219C.868536 10.381.868537 9.26368 1.63658 8.92276L3.97685 7.88394C5.77553 7.08552 7.20657 5.60881 7.97427 3.75892L8.8633 1.61673C9.19319.821767 10.2916.821765 10.6215 1.61673L11.5105 3.75894C12.2782 5.60881 13.7092 7.08552 15.5079 7.88394L17.8482 8.92276C18.6162 9.26368 18.6162 10.381 17.8482 10.7219L15.4325 11.7942C13.6789 12.5726 12.2731 13.9966 11.492 15.7854L10.6144 17.7956ZM4.53956 9.82234C6.8254 10.837 8.68402 12.5048 9.74238 14.7996 10.8008 12.5048 12.6594 10.837 14.9452 9.82234 12.6321 8.79557 10.7676 7.04647 9.74239 4.71088 8.71719 7.04648 6.85267 8.79557 4.53956 9.82234ZM19.4014 22.6899 19.6482 22.1242C20.0882 21.1156 20.8807 20.3125 21.8695 19.8732L22.6299 19.5353C23.0412 19.3526 23.0412 18.7549 22.6299 18.5722L21.9121 18.2532C20.8978 17.8026 20.0911 16.9698 19.6586 15.9269L19.4052 15.3156C19.2285 14.8896 18.6395 14.8896 18.4628 15.3156L18.2094 15.9269C17.777 16.9698 16.9703 17.8026 15.956 18.2532L15.2381 18.5722C14.8269 18.7549 14.8269 19.3526 15.2381 19.5353L15.9985 19.8732C16.9874 20.3125 17.7798 21.1156 18.2198 22.1242L18.4667 22.6899C18.6473 23.104 19.2207 23.104 19.4014 22.6899ZM18.3745 19.0469 18.937 18.4883 19.4878 19.0469 18.937 19.5898 18.3745 19.0469Z" fill="currentColor"></path>
+            </svg>
+            <span>Inspire</span>
+        </div>
+    </div>
+    <button>Code to Infinity!</button>
+</div>  
+  <hr><hr>
+  <!--fan switch as input-->
+  
+<div class="container">
+
+    
+  <div class="de">
+
+      
+      <div class="den">
+
+          
+          <hr class="line">
+          <hr class="line">
+          <hr class="line">
+
+          
+          <div class="switch">
+
+              
+              <label for="switch_off"><span>OFF</span></label>
+              <label for="switch_1"><span>1</span></label>
+              <label for="switch_2"><span>2</span></label>
+              <label for="switch_3"><span>3</span></label>
+              <label for="switch_4"><span>4</span></label>
+              <label for="switch_5"><span>5</span></label>
+
+              
+              <input type="radio" checked="" name="switch" id="switch_off">
+              <input type="radio" name="switch" id="switch_1">
+              <input type="radio" name="switch" id="switch_2">
+              <input type="radio" name="switch" id="switch_3">
+              <input type="radio" name="switch" id="switch_4">
+              <input type="radio" name="switch" id="switch_5">
+
+              
+              <div class="light"><span></span></div>
+
+              
+              <div class="dot"><span></span></div>
+
+              
+              <div class="dene">
+                  <div class="denem">
+                      <div class="deneme">
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+</body>
+</html>
